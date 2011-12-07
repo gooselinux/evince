@@ -1,0 +1,1159 @@
+--- a/po/as.po	2010-08-09 15:16:32.963875451 +0530
++++ a/po/as.po	2010-08-09 15:16:43.563874324 +0530
+@@ -9,7 +9,7 @@ 
+ msgstr ""
+ "Project-Id-Version: as\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
+ "PO-Revision-Date: 2010-04-16 11:07+0530\n"
+ "Last-Translator: Amitakhya Phukan <aphukan@redhat.com>\n"
+ "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
+@@ -21,7 +21,8 @@ 
+ 
+ #: ../backend/comics/comics-document.c:155
+ #, c-format
+-msgid "Error launching the command “%s” in order to decompress the comic book: %s"
++msgid ""
++"Error launching the command “%s” in order to decompress the comic book: %s"
+ msgstr "কমিক বহি ডিকম্প্ৰেছ কৰাৰ উদ্দেশ্যে “%s” আদেশ আৰম্ভ কৰিবলৈ সমস্যা: %s"
+ 
+ #: ../backend/comics/comics-document.c:169
+@@ -440,7 +441,7 @@ 
+ msgid "Print settings file"
+ msgstr "প্ৰিন্টৰ বৈশিষ্ট্য সম্বলিত নথিপত্ৰ"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME Document Previewer"
+ 
+@@ -570,7 +571,7 @@ 
+ msgid "Paper Size:"
+ msgstr "<b> কাগজ মাপ</b>"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "শূণ্য"
+ 
+@@ -696,11 +697,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "সমাপ্তি সৰ্বমোট."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "Jump to page:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "লোড কৰা হৈছে..."
+@@ -819,7 +820,8 @@ 
+ 
+ #: ../shell/ev-password-view.c:302
+ #, c-format
+-msgid "The document “%s” is locked and requires a password before it can be opened."
++msgid ""
++"The document “%s” is locked and requires a password before it can be opened."
+ msgstr ""
+ "“%s” ডকুমেন্ট বৰ্তমানে লক কৰা আছে ও মুক্ত কৰাৰ জন্য গুপ্তশব্দ উল্লেখ কৰা আবশ্যক  ।"
+ 
+@@ -869,6 +871,46 @@ 
+ msgid "Your print range selection does not include any page"
+ msgstr "প্ৰিন্টৰ উদ্দেশ্যে আপোনাৰ নিৰ্বাচিত পৃষ্ঠাৰ সীমাত কোনো পৃষ্ঠা উপস্থিত নাই"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr ""
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "বৈশিষ্ট্যাবলী"
+@@ -1022,7 +1064,8 @@ 
+ 
+ #: ../shell/ev-window.c:3164
+ #, c-format
+-msgid "There are %d print jobs active. Wait until print finishes before closing?"
++msgid ""
++"There are %d print jobs active. Wait until print finishes before closing?"
+ msgstr "এতিয়া %d মূদ্ৰণ কাৰ্য্য সক্ৰিয়  । বন্ধ কৰাৰ আগতে মূদ্ৰণ কাৰ্য্য শেষ হোৱালৈ ৰখক ?"
+ 
+ #: ../shell/ev-window.c:3176
+--- a/po/bn_IN.po	2010-08-09 15:16:32.968875480 +0530
++++ a/po/bn_IN.po	2010-08-09 15:16:43.914758590 +0530
+@@ -11,8 +11,8 @@ 
+ msgstr ""
+ "Project-Id-Version: bn_IN\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-13 12:43+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-22 17:40+0530\n"
+ "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+ "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+ "MIME-Version: 1.0\n"
+@@ -446,7 +446,7 @@ 
+ msgid "Print settings file"
+ msgstr "প্রিন্টের বৈশিষ্ট্য সম্বলিত ফাইল"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME Document Previewer"
+ 
+@@ -708,11 +708,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "উপস্থাপনার সমাপ্তি। Escape টিপে প্রস্থান করুন।"
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "চিহ্নিত পৃষ্ঠায় চলুন:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "লোড করা হচ্ছে..."
+@@ -881,15 +881,15 @@ 
+ 
+ #: ../shell/ev-print-operation.c:1807
+ msgid "Page Scaling:"
+-msgstr ""
++msgstr "পৃষ্ঠা মাপ নির্ধারণ:"
+ 
+ #: ../shell/ev-print-operation.c:1813
+ msgid "Shrink to Printable Area"
+-msgstr ""
++msgstr "প্রিন্ট করার যোগ্য মাপে সংকুচন"
+ 
+ #: ../shell/ev-print-operation.c:1814
+ msgid "Fit to Printable Area"
+-msgstr ""
++msgstr "প্রিন্ট করার যোগ্য মাপে নির্ধারণ"
+ 
+ #: ../shell/ev-print-operation.c:1817
+ msgid ""
+@@ -904,20 +904,27 @@ 
+ "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
+ "required to fit the printable area of the printer page.\n"
+ msgstr ""
++"প্রিন্টারের নির্বাচিত পৃষ্ঠার মাপ অনুযায়ী নথির পাতাগুলির মাপ নির্ধারিত হবে। নিম্নলিখিত মানগুলির মধ্যে যে কোনো একটি নির্বাচন করুন:\n"
++"\n"
++"• \"শূণ্য\": পৃষ্ঠার মাপ পরিবর্তিত হবে না।\n"
++"\n"
++"• \"প্রিন্ট করার যোগ্য মাপে সংকুচন\": প্রিন্ট করার যোগ্য অংশের তুলনায় নথির মধ্যে উপস্থিত বড় মাপের পাতাগুলি, প্রিন্টারের পাতার মাপ অনুযায়ী সংকুচন করা হবে।\n"
++"\n"
++"• \"প্রিন্ট করার যোগ্য মাপে নির্ধারণ\": প্রিন্টারের পাতার মধ্যে প্রিন্ট করার যোগ্য অংশের মধ্যে সুসংগতভাবে নথির পাতাগুলি নির্ধারণের জন্য নথির পাতাগুলি মাপ বড় অথবা ছোট করা হবে।\n"
+ 
+ #: ../shell/ev-print-operation.c:1829
+ msgid "Auto Rotate and Center"
+-msgstr ""
++msgstr "স্বয়ংক্রিয় আবর্তন ও কেন্দ্রস্থল নির্ধারণ"
+ 
+ #: ../shell/ev-print-operation.c:1832
+ msgid ""
+ "Rotate printer page orientation of each page to match orientation of each "
+ "document page. Document pages will be centered within the printer page."
+-msgstr ""
++msgstr "নথির প্রত্যেকটি পৃষ্ঠার দিশার সাথে সামঞ্জস্য বজায় রাখার জন্য প্রিন্টারের পৃষ্ঠার দিশা আবর্তিত হবে। নথির পৃষ্ঠাগুলি প্রিন্টারের পৃষ্ঠার কেন্দ্রে অবস্থিত হবে।"
+ 
+ #: ../shell/ev-print-operation.c:1912
+ msgid "Page Handling"
+-msgstr ""
++msgstr "পৃষ্ঠার ব্যবস্থাপনা"
+ 
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+--- a/po/gu.po	2010-08-09 15:16:32.951875190 +0530
++++ a/po/gu.po	2010-08-09 15:16:45.178754086 +0530
+@@ -6,8 +6,8 @@ 
+ msgstr ""
+ "Project-Id-Version: gu\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-05 13:17+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-22 12:59+0530\n"
+ "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+ "Language-Team: Gujarati\n"
+ "MIME-Version: 1.0\n"
+@@ -462,7 +462,7 @@ 
+ msgid "Print settings file"
+ msgstr "ફાઇલ સુયોજનોને છાપો"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME દસ્તાવેજ દર્શક"
+ 
+@@ -592,7 +592,7 @@ 
+ msgid "Paper Size:"
+ msgstr "કાગળ માપ:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "કંઇ નહી"
+ 
+@@ -718,11 +718,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "રજૂઆતનો અંત. બહાર નીકળવા માટે Escape દબાવો."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "પાનાં પર જાવ:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "લાવી રહ્યા છીએ..."
+@@ -889,6 +889,55 @@ 
+ msgid "Your print range selection does not include any page"
+ msgstr "તમારી છાપન સીમા પસંદગી કોઇપણ પાનાંમાં ઉમેરાતી નથી"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "પાનાનું માપન:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "છાપી શકાય તેવા વિસ્તારને સંકોચો"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "છાપી શકાય તેવા વિસ્તારમાં બંધબેસાડો"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"દસ્તાવેજ પાનાંઓ પસંદ થયેલ પ્રિન્ટર પાનાંને બંધબેસે એમ માપો. નીચેનાં એકને પસંદ કરો:\n"
++"\n"
++"• \"કંઇ નહિં\": પાનાનું માપન થતુ નથી.\n"
++"\n"
++"• \"છાપી શકાય તેવા વિસ્તારને સંકોચો\": દસ્તાવેજ પાનાંઓ એ છાપી શકાય તેવા કરતા મોટા હોવાથી પ્રિન્ટર પાનાનાં છાપી શકાય તેવા વિસ્તારને "
++"બંધબેસાડવા માટે ઘટાડે છે.\n"
++"\n"
++"• \"છાપી શકાય તેવા વિસ્તારને બંધબેસાડો\": દસ્તાવેજ પાનાઓ પ્રિન્ટર પાનાનાં છાપી શકાય તેવા વિસ્તારને બંધબેસાડવા માટે જરૂરિયાત પ્રમાણે વધે અથવા ઘટે "
++"છે.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "સ્વયં ફેરવો અને કેન્દ્રમાં લાવો"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr "દરેક પાનાનું પ્રિન્ટર પાનાંની દિશા એ દરેક દસ્તાવેજ પાનાંની દિશાને બંધબેસે એમ ફેરવો. દસ્તાવેજ પાનાંઓ પ્રિન્ટર પાનામાં કેન્દ્રિત થયેલ હશે."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "પાનાને સંભાળવાનું"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "ગુણધર્મો"
+--- a/po/hi.po	2010-08-09 15:16:32.971875030 +0530
++++ a/po/hi.po	2010-08-09 15:16:45.787875201 +0530
+@@ -8,10 +8,10 @@ 
+ msgstr ""
+ "Project-Id-Version: hi\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-06 12:28+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-26 13:10+0530\n"
+ "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
+-"Language-Team: Hindi <Red Hat>\n"
++"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -22,6 +22,7 @@ 
+ "\n"
+ "\n"
+ "\n"
++"\n"
+ "X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../backend/comics/comics-document.c:155
+@@ -444,7 +445,7 @@ 
+ msgid "Print settings file"
+ msgstr "सेटिंग फ़ाइल छापें"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME दस्तावेज पूर्वदर्शक"
+ 
+@@ -574,7 +575,7 @@ 
+ msgid "Paper Size:"
+ msgstr "कागज आकार:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "कुछ नहीं"
+ 
+@@ -700,11 +701,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "प्रस्तुति का अंत. बाहर निकलने के लिए Escape दबाएं"
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "पृष्ठ पर जाएँ:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "लोड किया जा रहा है..."
+@@ -871,6 +872,53 @@ 
+ msgid "Your print range selection does not include any page"
+ msgstr "आपकी छपाई परिसर चयन में कोई पृष्ठ शामिल नहीं है"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "पृष्ठ अनुमापन:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "छापने योग्य क्षेत्र में सिकोड़ें"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "छापने योग्य क्षेत्र में सटीक बैठाएँ"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"चयनित छपाई पृष्ठ से बैठाने के लिए दस्तावेज पृष्ठों को अनुमापित किया जाएगा. इनमें से किसी एक से चुनें:\n"
++"\n"
++"• \"कोई नहीं\": कोई पृष्ठ अनुमापन नहीं किया जाएगा.\n"
++"\n"
++"• \"छापने योग्य क्षेत्र में सिकोड़ें\": छापने योग्य क्षेत्र से अधिक बड़ा दस्तावेज पृष्ठ को मुद्रक पृष्ठ के छापने योग्य क्षेत्र में बैठाने के लिए कम कर दिया जाएगा.\n"
++"\n"
++"• \"छापने योग्य क्षेत्र में बैठाएँ\": छापने योग्य क्षेत्र से अधिक बड़ा दस्तावेज पृष्ठ को मुद्रक पृष्ठ के छापने योग्य क्षेत्र में बैठाने के लिए कम या बड़ा कर दिया जाएगा.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "स्वतः घुमाएँ और केंद्रीकृत करें"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr "हर पृष्ठ के मुद्रक पृष्ठ अभिमुखन को हर दस्तावेज पृष्ठ के अभिमुखन से मिलाने के लिए घुमाएँ. दस्तावेज पृष्ठ को छपाई पृष्ठ के अंतर्गत केंद्रीकृत किया जाएगा."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "पृष्ठ नियंत्रण"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "गुण"
+--- a/po/ja.po	2010-08-09 15:16:32.948875262 +0530
++++ a/po/ja.po	2010-08-09 15:16:46.858754166 +0530
+@@ -12,14 +12,14 @@ 
+ msgstr ""
+ "Project-Id-Version: ja\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-16 10:14+0900\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-21 17:11+0900\n"
+ "Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
+ "Language-Team: Japanese <jp@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms:  nplurals=1; plural=0;\n"
++"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+ "X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../backend/comics/comics-document.c:155
+@@ -446,7 +446,7 @@ 
+ msgid "Print settings file"
+ msgstr "プリンタ設定ファイル"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME ドキュメント・プレビューア"
+ 
+@@ -706,11 +706,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "プレゼンテーションの最後です。[ESC] キーで終了します。"
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "移動先のページ:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "読み込み中です..."
+@@ -881,15 +881,15 @@ 
+ 
+ #: ../shell/ev-print-operation.c:1807
+ msgid "Page Scaling:"
+-msgstr ""
++msgstr "ページスケーリング:"
+ 
+ #: ../shell/ev-print-operation.c:1813
+ msgid "Shrink to Printable Area"
+-msgstr ""
++msgstr "印刷可能サイズに縮小"
+ 
+ #: ../shell/ev-print-operation.c:1814
+ msgid "Fit to Printable Area"
+-msgstr ""
++msgstr "印刷可能サイズに適合"
+ 
+ #: ../shell/ev-print-operation.c:1817
+ msgid ""
+@@ -904,20 +904,32 @@ 
+ "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
+ "required to fit the printable area of the printer page.\n"
+ msgstr ""
++"ドキュメントページを選択したプリンタページに適合するようにサイズ調整します。 "
++"以下の１つを選択して下さい:\n"
++"\n"
++"• \"なし\": ページスケーリングは実行しません。\n"
++"\n"
++"• \"印刷可能サイズに縮小\": 印刷可能サイズより大きなドキュメントはプリンタ"
++"ページの印刷可能サイズに適合するように縮小されます。\n"
++"\n"
++"• \"印刷可能サイズに適合\": ドキュメントサイズはプリンタページの印刷可能サイズに "
++"適合させるために拡大か、又は縮小されます。\n"
+ 
+ #: ../shell/ev-print-operation.c:1829
+ msgid "Auto Rotate and Center"
+-msgstr ""
++msgstr "自動回転と中央"
+ 
+ #: ../shell/ev-print-operation.c:1832
+ msgid ""
+ "Rotate printer page orientation of each page to match orientation of each "
+ "document page. Document pages will be centered within the printer page."
+ msgstr ""
++"各ページの印刷ページ方向を回転して各ドキュメントページの方向に適合するように "
++"します。ドキュメントページは印刷ページの中央に配置されます。"
+ 
+ #: ../shell/ev-print-operation.c:1912
+ msgid "Page Handling"
+-msgstr ""
++msgstr "ページ頭書き"
+ 
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+@@ -1058,6 +1070,7 @@ 
+ msgid "%d pending job in queue"
+ msgid_plural "%d pending jobs in queue"
+ msgstr[0] "保留中の印刷ジョブが %d 個あります"
++msgstr[1] "保留中の印刷ジョブが %d 個あります"
+ 
+ #: ../shell/ev-window.c:2954
+ #, c-format
+@@ -1166,6 +1179,7 @@ 
+ msgid "%d found on this page"
+ msgid_plural "%d found on this page"
+ msgstr[0] "このページで %d 個見つかりました"
++msgstr[1] "このページで %d 個見つかりました"
+ 
+ #: ../shell/ev-window.c:4448
+ #, c-format
+--- a/po/kn.po	2010-08-09 15:16:32.968875480 +0530
++++ a/po/kn.po	2010-08-09 15:16:47.365879156 +0530
+@@ -7,10 +7,10 @@ 
+ msgstr ""
+ "Project-Id-Version: evince.master.kn\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-01 17:18+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-21 15:34+0530\n"
+ "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+-"Language-Team: kn-IN <>\n"
++"Language-Team: LC_MESSAGES <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -441,7 +441,7 @@ 
+ msgid "Print settings file"
+ msgstr "ಮುದ್ರಣ ಸಿದ್ಧತೆಗಳ ಕಡತ"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME ದಸ್ತಾವೇಜು ಪೂರ್ವವೀಕ್ಷಕ"
+ 
+@@ -697,11 +697,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "ಪ್ರದರ್ಶನದ ಕೊನೆಯನ್ನು ತಲುಪಿದೆ. ನಿರ್ಗಮಿಸಲು ಎಸ್ಕೇಪ್ ಅನ್ನು ಒತ್ತಿ."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "ಈ ಪುಟಕ್ಕೆ ಹೋಗು:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
+@@ -872,15 +872,15 @@ 
+ 
+ #: ../shell/ev-print-operation.c:1807
+ msgid "Page Scaling:"
+-msgstr ""
++msgstr "ಪುಟದಗಾತ್ರಬದಲಾವಣೆ:"
+ 
+ #: ../shell/ev-print-operation.c:1813
+ msgid "Shrink to Printable Area"
+-msgstr ""
++msgstr "ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕೆ ಕುಗ್ಗಿಸು"
+ 
+ #: ../shell/ev-print-operation.c:1814
+ msgid "Fit to Printable Area"
+-msgstr ""
++msgstr "ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕೆ ಸರಿಹೊಂದಿಸು"
+ 
+ #: ../shell/ev-print-operation.c:1817
+ msgid ""
+@@ -895,20 +895,33 @@ 
+ "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
+ "required to fit the printable area of the printer page.\n"
+ msgstr ""
++"ಆಯ್ಕೆ ಮಾಡಲಾದ ಮುದ್ರಕ ಪುಟಕ್ಕೆ ಸರಿಹೊಂದುವಂತೆ ದಸ್ತಾವೇಜಿನ ಪುಟಗಳ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಿ. ಈ "
++"ಕೆಳಗಿನವುಗಳಲ್ಲಿ ಒಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:\n"
++"\n"
++"• \"ಯಾವುದೂ ಇಲ್ಲ\": ಯಾವುದೆ ಪುಟದ ಗಾತ್ರ ಬದಲಾವಣೆಯನ್ನು ಮಾಡಲಾಗುವುದಿಲ್ಲ.\n"
++"\n"
++"• \"ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕೆ ಕುಗ್ಗಿಸು\": ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕಿಂತ ದೊಡ್ಡದಾಗಿರುವ ದಸ್ತಾವೇಜಿನ "
++"ಪುಟಗಳನ್ನು ಮುದ್ರಕ ಪುಟದಲ್ಲಿನ ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕೆ ಸರಿಹೊಂದುವಂತೆ ಕುಗ್ಗಿಸಲಾಗುತ್ತದೆ.\n"
++"\n"
++"• \"ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕೆ ಸರಿಹೊಂದಿಸು\":ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕಿಂತ ದೊಡ್ಡದಾಗಿರುವ ದಸ್ತಾವೇಜಿನ "
++"ಪುಟಗಳನ್ನು ಮುದ್ರಕ ಪುಟದಲ್ಲಿನ ಮುದ್ರಿಸಬಹುದಾದ ಜಾಗಕ್ಕೆ ಸರಿಹೊಂದುವಂತೆ ಹಿಗ್ಗಿಸಲಾಗುತ್ತದೆ ಹಾಗು "
++"ಕುಗ್ಗಿಸಲಾಗುತ್ತದೆ.\n"
+ 
+ #: ../shell/ev-print-operation.c:1829
+ msgid "Auto Rotate and Center"
+-msgstr ""
++msgstr "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತಿರುಗಿಸು  ಹಾಗು ಮಧ್ಯದಲ್ಲಿ ಇರಿಸು"
+ 
+ #: ../shell/ev-print-operation.c:1832
+ msgid ""
+ "Rotate printer page orientation of each page to match orientation of each "
+ "document page. Document pages will be centered within the printer page."
+ msgstr ""
++"ಪ್ರತಿ ಪುಟದ ಮುದ್ರಣದ ಪುಟದ ವಾಲಿಕೆಯನ್ನು  ಪ್ರತಿಯೊಂದು ದಸ್ತಾವೇಜು ಪುಟಕ್ಕೆ ಹೊಂದಿಕೊಳ್ಳುವಂತೆ "
++"ತಿರುಗಿಸಿ. ದಸ್ತಾವೇಜು ಪುಟಗಳನ್ನು ಮುದ್ರಣದ ಪುಟದ ನಡುವಿನಲ್ಲಿ ಇರಿಸಲಾಗುತ್ತದೆ. "
+ 
+ #: ../shell/ev-print-operation.c:1912
+ msgid "Page Handling"
+-msgstr ""
++msgstr "ಪುಟವನ್ನು ನಿಭಾಯಿಸುವಿಕೆ"
+ 
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+--- a/po/ml.po	2010-08-09 15:16:32.960875072 +0530
++++ a/po/ml.po	2010-08-09 15:16:48.266874792 +0530
+@@ -1,23 +1,24 @@ 
++# translation of ml.po to Malayalam
++# Ani Peter <apeter@redhat.com>, 2006, 2009, 2010.
++# Santhosh Thottingal <santhosh.thottingal@gmail.com> , 2008.
+ # translation of ml.po to
+ # translation of evince.master.ml.po to
+ # translation of evince.HEAD.ml.po to
+ # This file is distributed under the same license as the evince package.
+ # Copyright (C) 2006-2008 evince'S COPYRIGHT HOLDER.
+-# Ani Peter <apeter@redhat.com>, 2006, 2009.
+-# Santhosh Thottingal <santhosh.thottingal@gmail.com> , 2008
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: ml\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-14 14:53+0530\n"
+-"Last-Translator: \n"
+-"Language-Team:  <en@li.org>\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-29 00:06+0530\n"
++"Last-Translator: Ani Peter <apeter@redhat.com>\n"
++"Language-Team: Malayalam <smc-discuss@googlegorups.com>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Generator: KBabel 1.11.4\n"
+-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+ "\n"
+ 
+ #: ../backend/comics/comics-document.c:155
+@@ -442,7 +443,7 @@ 
+ msgid "Print settings file"
+ msgstr "സജ്ജീകരണ ഫയല്‍ പ്രിന്റ് ചെയ്യുക"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "ഗ്നോം രേഖാദര്‍ശിനി"
+ 
+@@ -698,11 +699,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "അവതരണം അവസാനിച്ചിരിക്കുന്നു. പുറത്ത് കടക്കുന്നതിനായി Esc അമര്‍ത്തുക."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "പോകേണ്ട താള്‍:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "ലഭ്യമാക്കുന്നു..."
+@@ -871,15 +872,15 @@ 
+ 
+ #: ../shell/ev-print-operation.c:1807
+ msgid "Page Scaling:"
+-msgstr ""
++msgstr "പേജ് സ്കെയിലിങ്:"
+ 
+ #: ../shell/ev-print-operation.c:1813
+ msgid "Shrink to Printable Area"
+-msgstr ""
++msgstr "പ്രിന്റ് ചെയ്യേണ്ട സ്ഥലമായി കുറയ്ക്കുക"
+ 
+ #: ../shell/ev-print-operation.c:1814
+ msgid "Fit to Printable Area"
+-msgstr ""
++msgstr "പ്രിന്റ് ചെയ്യേണ്ട സ്ഥല‌മായി സജ്ജമാക്കുക"
+ 
+ #: ../shell/ev-print-operation.c:1817
+ msgid ""
+@@ -894,20 +895,32 @@ 
+ "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
+ "required to fit the printable area of the printer page.\n"
+ msgstr ""
++"തെരഞ്ഞെടുത്ത പ്രിന്റര്‍ താളിനു് പാകത്തിനു് രേഖയുടെ താളുകള്‍ സജ്ജമാക്കുക. "
++"താഴെ പറഞ്ഞിരിയ്ക്കുന്നതില്‍ നിന്നും ഒന്നു് തെരഞ്ഞെടുക്കുക:\n"
++"\n"
++"• \"ശൂന്യം\": താളിന്റെ അളവു് മാറ്റുന്നതല്ല.\n"
++"\n"
++"• \"പ്രിന്റ് ചെയ്യേണ്ട സ്ഥലമായി കുറയ്ക്കുക\": പ്രിന്റ് ചെയ്യേണ്ട സ്ഥലത്തേക്കാള്‍ വലിയ താളുകള്‍ "
++"അതിനു് പാകത്തിനു് കുറയ്ക്കുന്നു.\n"
++"\n"
++"• \"പ്രിന്റ് ചെയ്യേണ്ട സ്ഥല‌മായി സജ്ജമാക്കുക\": പ്രിന്റ് ചെയ്യേണ്ട സ്ഥലത്തേക്കാള്‍ വലിയ താളുകള്‍ "
++"അതിനു് പാകത്തിനു് സജ്ജമാക്കുന്നു.\n"
+ 
+ #: ../shell/ev-print-operation.c:1829
+ msgid "Auto Rotate and Center"
+-msgstr ""
++msgstr "സ്വയം തിരിച്ചു് മദ്ധ്യത്തിലാക്കുക"
+ 
+ #: ../shell/ev-print-operation.c:1832
+ msgid ""
+ "Rotate printer page orientation of each page to match orientation of each "
+ "document page. Document pages will be centered within the printer page."
+ msgstr ""
++"ഓരോ രേഖയുടെ താളിന്റെ സംവേദമായി ചേരുന്നതിനു് ഓരോ താളിന്റേയും പ്രിന്റര്‍ "
++"സംവേദം തിരിയ്ക്കുക. പ്രിന്റര്‍ താളിന്റെ മദ്ധ്യത്തിലായിരിക്കണം രേഖയുടെ താളുകള്‍."
+ 
+ #: ../shell/ev-print-operation.c:1912
+ msgid "Page Handling"
+-msgstr ""
++msgstr "പേജ് ഹാന്‍ഡ്ലിങ്"
+ 
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+--- a/po/mr.po	2010-08-09 15:16:32.950875457 +0530
++++ a/po/mr.po	2010-08-09 15:16:48.698879635 +0530
+@@ -10,10 +10,10 @@ 
+ msgstr ""
+ "Project-Id-Version: mr\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-05 16:33+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-26 17:01+0530\n"
+ "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+-"Language-Team: Marathi <maajhe-sanganak@freelists.org>\n"
++"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -442,7 +442,7 @@ 
+ msgid "Print settings file"
+ msgstr "संयोजना फाइलची छपाई करत आहे"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME दस्तऐवज पूर्वदर्शक"
+ 
+@@ -574,7 +574,7 @@ 
+ msgid "Paper Size:"
+ msgstr "कागदाचा आकार:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "काही नाही"
+ 
+@@ -700,11 +700,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "प्रस्तुतीकरण समाप्त. बाहेर पडण्याकरीता Escape दाबा."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "पानावर जा:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "वाचतोय..."
+@@ -871,6 +871,56 @@ 
+ msgid "Your print range selection does not include any page"
+ msgstr "तुमच्या छपाई व्याप्ती नीवड मध्ये पान समाविष्टीत नाही"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "पानाचे आकार बदल:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "छपाईजोगी क्षेत्रकरीता संकुचन करा"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "छपाईजोगी क्षेत्रात बसवा"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"नीवडलेले छपाईयंत्र पान बसवण्यासाठी दस्तऐवज पाने प्रमाणीत करा. खालीलपैकी "
++"एक नीवडा:\n"
++"\n"
++"• \"None\": पानाचे स्केलिंग चालवले जात नाही.\n"
++"\n"
++"• \"Shrink to Printable Area\": छपाईयंत्र पानाला छपाईजोगी क्षेत्रात बसवण्याकरीता "
++"छपाईजोगी क्षेत्रपेक्षा मोठे दस्तऐवज पानांचे आकार लहान केले जातात.\n"
++"\n"
++"• \"Fit to Printable Area\": छपाईयंत्र पानाला छपाईजोगी क्षेत्रात बसवण्याकरीता "
++"दस्तऐवज पानांचे आकार आवश्यकताप्रमाणे मोठे किंवा लहान केले जातात.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "स्वयं फिरवा व मध्यभागी आणा"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr "प्रत्येक दस्तऐवज पानाची दिशा जुळवण्यासाठी छपाईयंत्र पानाची दिशा बदला. दस्तऐवज पाने छपाईयंत्र पानाच्या मध्यभागी स्थीत होतील."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "पानाची हाताळणी"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "वैशिष्ट्ये"
+@@ -1108,7 +1158,7 @@ 
+ msgstr ""
+ "Sameer N. Ingole <strike@proscrutiny.com>, 2006; राहुल भालेराव <b.rahul."
+ "pm@gmail.com>, 2006; संदिप शेडमाके <sandeep.shedmake@gmail.com>, 2008, 2009; "
+-"संदिप शेडमाके <sshedmak@redhat.com>, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2010."
++"संदिप शेडमाके <sshedmak@redhat.com>, 2009, 2010."
+ 
+ #. TRANS: Sometimes this could be better translated as
+ #. "%d hit(s) on this page".  Therefore this string
+--- a/po/or.po	2010-08-09 15:16:32.964875139 +0530
++++ a/po/or.po	2010-08-09 15:16:49.146879791 +0530
+@@ -8,14 +8,15 @@ 
+ msgstr ""
+ "Project-Id-Version: or\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-06 15:46+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-22 18:41+0530\n"
+ "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
+-"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
++"Language-Team: Oriya <Translation-team-or@lists.sourceforge.net>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
++"Plural-Forms: nplurals=2; plural=(n!=1);\n"
++"\n"
+ "\n"
+ "\n"
+ "\n"
+@@ -445,7 +446,7 @@ 
+ msgid "Print settings file"
+ msgstr "ମୁଦ୍ରଣୀ ବିନ୍ୟାସ ଫାଇଲ"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME ଦଲିଲ ପ୍ରାକ ପ୍ରଦର୍ଶକ"
+ 
+@@ -701,11 +702,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "ଉପସ୍ଥାପନ ସମାପ୍ତି. ପ୍ରସ୍ଥାନ କରିବା ପାଇଁ Escapeକୁ ଦବାନ୍ତୁ."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "ପ୍ରୁଷ୍ଠାକୁ ଯାଆନ୍ତୁ:"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "ଧାରଣ କରନ୍ତୁ ..."
+@@ -874,15 +875,15 @@ 
+ 
+ #: ../shell/ev-print-operation.c:1807
+ msgid "Page Scaling:"
+-msgstr ""
++msgstr "ପୃଷ୍ଠା ମାପ:"
+ 
+ #: ../shell/ev-print-operation.c:1813
+ msgid "Shrink to Printable Area"
+-msgstr ""
++msgstr "ମୁଦ୍ରଣ କ୍ଷେତ୍ରକୁ ସଙ୍କୋଚିତ କରନ୍ତୁ"
+ 
+ #: ../shell/ev-print-operation.c:1814
+ msgid "Fit to Printable Area"
+-msgstr ""
++msgstr "ମୁଦ୍ରଣ କ୍ଷେତ୍ରକୁ ମେଳାନ୍ତୁ"
+ 
+ #: ../shell/ev-print-operation.c:1817
+ msgid ""
+@@ -897,20 +898,32 @@ 
+ "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
+ "required to fit the printable area of the printer page.\n"
+ msgstr ""
++"ମୁଦ୍ରଣୀ ପୃଷ୍ଠା ସହିତ ମେଳ ଖାଇବା ପରି ଦଲିଲ ପୃଷ୍ଠାଗୁଡ଼ିକୁ ମାପନ୍ତୁ। ନିମ୍ନଲିଖିତ ମଧ୍ଯରୁ ଗୋଟିକୁ "
++"ବାଛନ୍ତୁ:\n"
++"\n"
++"• \"କିଛିନୁହଁ\": କୌଣସି ପୃଷ୍ଠା ମାପକୁ କାର୍ଯ୍ୟକାରୀ କରାଯାଇନାହିଁ।\n"
++"\n"
++"• \"ମୁଦ୍ରଣ ଯୋଗ୍ୟ କ୍ଷେତ୍ରମଧ୍ଯକୁ ସଙ୍କୋଚିତ କରନ୍ତୁ\": ମୁଦ୍ରଣୀ କ୍ଷେତ୍ର ଠାରୁ ବଡ଼ ଥିବା ଦଲିଲ ପୃଷ୍ଠାଗୁଡ଼ିକ"
++"ମୁଦ୍ରଣୀ ପୃଷ୍ଠାର ମୁଦ୍ରଣୀ କ୍ଷେତ୍ର ସହିତ ମେଳ ଖାଇଥାଏ।\n"
++"\n"
++"• \"ମୁଦ୍ରଣୀ କ୍ଷେତ୍ର ସହିତ ମେଳ ଖାଇଥାଏ\": ଦଲିଲ ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଆବଶ୍ୟକତା ଅନୁସାରେ ମୁଦ୍ରଣୀ ପୃଷ୍ଠାର "
++"ମୁଦ୍ରଣୀ କ୍ଷେତ୍ର ସହିତ ମେଳ ଖାଇବା ପାଇଁ ବଡ଼ କିମ୍ବା ଛୋଟ କରାଯାଇଥାଏ ।\n"
+ 
+ #: ../shell/ev-print-operation.c:1829
+ msgid "Auto Rotate and Center"
+-msgstr ""
++msgstr "ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଘୁରାନ୍ତୁ ଏବଂ କେନ୍ଦ୍ରିତ କରନ୍ତୁ"
+ 
+ #: ../shell/ev-print-operation.c:1832
+ msgid ""
+ "Rotate printer page orientation of each page to match orientation of each "
+ "document page. Document pages will be centered within the printer page."
+ msgstr ""
++"ପ୍ରତ୍ୟେକ ଦଲିଲ ପୃଷ୍ଠାର ଆବର୍ତ୍ତନକୁ ମେଳାଇବା ପାଇଁ ପ୍ରତ୍ୟେକ ପୃଷ୍ଠାର ମୁଦ୍ରଣୀ ପୃଷ୍ଠାକୁ ଘୁରାନ୍ତୁ। "
++"ଦଲିଲ ପୃଷ୍ଠାଗୁଡ଼ିକ ମୁଦ୍ରଣୀ ପୃଷ୍ଠା ମଧ୍ଯରେ କେନ୍ଦ୍ରିତ କରାଯିବ।"
+ 
+ #: ../shell/ev-print-operation.c:1912
+ msgid "Page Handling"
+-msgstr ""
++msgstr "ପୃଷ୍ଠା ନିୟନ୍ତ୍ରଣ"
+ 
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+--- a/po/te.po	2010-08-09 15:16:32.965875042 +0530
++++ a/po/te.po	2010-08-09 15:16:51.610880219 +0530
+@@ -9,8 +9,8 @@ 
+ msgstr ""
+ "Project-Id-Version: te\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-05 14:10+0530\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-21 17:50+0530\n"
+ "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
+ "Language-Team: Telugu <en@li.org>\n"
+ "MIME-Version: 1.0\n"
+@@ -20,6 +20,7 @@ 
+ "\n"
+ "\n"
+ "\n"
++"\n"
+ "X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../backend/comics/comics-document.c:155
+@@ -442,7 +443,7 @@ 
+ msgid "Print settings file"
+ msgstr "అమరికల దస్త్రమును ముద్రించుము"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME డాక్యుమెంట్ ప్రివ్యూయర్"
+ 
+@@ -572,7 +573,7 @@ 
+ msgid "Paper Size:"
+ msgstr "కాగిత పరిమాణము:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Eదికాదు"
+ 
+@@ -698,11 +699,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "సమర్పణ ముగిసినది."
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "పుటకు ఎగురుము"
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "లోడవుతున్నది..."
+@@ -869,6 +870,58 @@ 
+ msgid "Your print range selection does not include any page"
+ msgstr "మీ ముద్రణ విస్తృతి యెంపిక ఏ పేజీను చేర్చలేదు"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "పేజీ స్కేలింగ్:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "ముద్రించదగు ప్రాంతమునకు కుచింపుము"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "ముద్రించగల ప్రాంతమునకు అమర్చుము"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"ఎంపికచేసిన ముద్రణ పేజీనకు అమరునట్లు పత్రము పేజీలను సరిదిద్దుము. కింది వాటిలో వొకదానినుండి"
++"యెంపికచేయుము:\n"
++"\n"
++"• \"ఏదీకాదు\": ఎటువంటి పేజీ స్కేలింగ్ జరుపబడదు.\n"
++"\n"
++"• \"ముద్రించగల ప్రాంతమునకు కుచింపుము\": ముద్రించగల ప్రాతమునకన్నా పెద్దవైన పత్రము పేజీలు "
++"ముద్రణ పేజీ యొక్క ముద్రించగల ప్రాంతమునకు అమరునట్లు తగ్గించబడును.\n"
++"\n"
++"• \"ముద్రించగల ప్రాంతమునకు అమర్చుము\": ముద్రణ పేజీ యొక్క ముద్రించగల ప్రాంతమునకు "
++"అమరునట్లు పత్రము పేజీలు పెద్దవిచేయబడును లేదా తగ్గించబడును.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "స్వయంచాలనంగా తిప్పుము మరియు మధ్యనవుంచుము"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"పత్రము యొక్క ప్రతి పేజీతో సరిపోలునట్లు ప్రతి ముద్రణ పేజీ యొక్క సర్దుబాటును తిప్పుము. పత్రము పేజీలు "
++"ముద్రణ పేజీ లోపల మధ్యన వుంచబడుతాయి."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "పేజీ సంభాలన"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "లక్షణాలు"
+--- a/po/zh_CN.po	2010-08-09 15:16:32.953875478 +0530
++++ a/po/zh_CN.po	2010-08-09 15:16:52.202879836 +0530
+@@ -12,8 +12,8 @@ 
+ msgstr ""
+ "Project-Id-Version: zh_CN\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-03-29 12:44+0530\n"
+-"PO-Revision-Date: 2010-04-08 14:49+1000\n"
++"POT-Creation-Date: 2010-07-19 17:25+0530\n"
++"PO-Revision-Date: 2010-07-22 15:57+1000\n"
+ "Last-Translator: Leah Liu <lliu@redhat.com>\n"
+ "Language-Team: Wei Liu\n"
+ "MIME-Version: 1.0\n"
+@@ -442,7 +442,7 @@ 
+ msgid "Print settings file"
+ msgstr "打印设置文件"
+ 
+-#: ../previewer/ev-previewer.c:141 ../previewer/ev-previewer.c:175
++#: ../previewer/ev-previewer.c:145 ../previewer/ev-previewer.c:179
+ msgid "GNOME Document Previewer"
+ msgstr "GNOME 文档预览器"
+ 
+@@ -572,7 +572,7 @@ 
+ msgid "Paper Size:"
+ msgstr "纸张大小："
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "无"
+ 
+@@ -698,11 +698,11 @@ 
+ msgid "End of presentation. Press Escape to exit."
+ msgstr "演示文稿结束。请按 Esc 退出。"
+ 
+-#: ../libview/ev-view.c:3725
++#: ../libview/ev-view.c:3728
+ msgid "Jump to page:"
+ msgstr "转到指定页："
+ 
+-#: ../libview/ev-view.c:4007 ../shell/ev-sidebar-layers.c:125
++#: ../libview/ev-view.c:4010 ../shell/ev-sidebar-layers.c:125
+ #: ../shell/ev-sidebar-links.c:267
+ msgid "Loading..."
+ msgstr "正在载入..."
+@@ -867,6 +867,53 @@ 
+ msgid "Your print range selection does not include any page"
+ msgstr "您选择的打印范围不包括任何页面"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "页面缩放："
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "缩小到可打印区域"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "符合可打印区域"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"将文档页面缩放到符合选择的打印机页面。从以下选项中选择：\n"
++"\n"
++"• \"无\"：不执行页面缩放。\n"
++"\n"
++"• \"缩小到可打印区域\"：将比可打印区域大的文档页面缩小到符合打印机页面的可打印区域。\n"
++"\n"
++"• \"符合可打印区域\"：将比可打印区域大的文档页面缩小到符合打印机页面的可打印区域。\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "自动旋转并居中"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr "旋转打印机页面方向使每个页面都符合文档页面方向。文档页面在打印机页面中将居中。"
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "页面处理"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "属性"

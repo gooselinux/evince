@@ -1,0 +1,20 @@
+diff --git a/libview/ev-view.c b/libview/ev-view.c
+index e41e35f..b556310 100644
+--- a/libview/ev-view.c
++++ b/libview/ev-view.c
+@@ -5158,13 +5158,13 @@ ev_view_get_sizing_mode (EvView *view)
+ gboolean
+ ev_view_can_zoom_in (EvView *view)
+ {
+-	return view->scale * ZOOM_IN_FACTOR <= view->max_scale;
++	return view->scale < (view->max_scale - EPSILON);
+ }
+ 
+ gboolean
+ ev_view_can_zoom_out (EvView *view)
+ {
+-	return view->scale * ZOOM_OUT_FACTOR >= view->min_scale;
++	return view->scale > (view->min_scale + EPSILON);
+ }
+ 
+ void

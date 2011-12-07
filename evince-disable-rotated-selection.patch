@@ -1,0 +1,23 @@
+diff --git a/libview/ev-view.c b/libview/ev-view.c
+index e41e35f..8455a4b 100644
+--- a/libview/ev-view.c
++++ b/libview/ev-view.c
+@@ -1574,7 +1574,7 @@ ev_view_handle_cursor_over_xy (EvView *view, gint x, gint y)
+ 		}
+ 	} else if ((annot = ev_view_get_annotation_at_location (view, x, y))) {
+ 		ev_view_set_cursor (view, EV_VIEW_CURSOR_LINK);
+-	} else if (location_in_text (view, x + view->scroll_x, y + view->scroll_y)) {
++	} else if ((view->rotation == 0) && location_in_text (view, x + view->scroll_x, y + view->scroll_y)) {
+ 		ev_view_set_cursor (view, EV_VIEW_CURSOR_IBEAM);
+ 	} else {
+ 		if (view->cursor == EV_VIEW_CURSOR_LINK ||
+@@ -3023,6 +3023,9 @@ static void
+ start_selection_for_event (EvView         *view,
+ 			   GdkEventButton *event)
+ {
++	if (view->rotation != 0)
++		return;
++
+ 	clear_selection (view);
+ 
+ 	view->selection_info.start.x = event->x + view->scroll_x;

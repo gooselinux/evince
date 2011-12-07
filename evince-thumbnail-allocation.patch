@@ -1,0 +1,12 @@
+--- libdocument/ev-document-misc.c	2009-08-14 15:52:17.000000000 +0200
++++ libdocument/ev-document-misc.c	2009-10-22 15:04:48.000000000 +0200
+@@ -60,6 +60,9 @@ ev_document_misc_get_thumbnail_frame (in
+ 				 width_r + 4,
+ 				 height_r + 4);
+ 
++	if (retval == NULL)
++		return NULL;
++
+ 	/* make it black and fill in the middle */
+ 	data = gdk_pixbuf_get_pixels (retval);
+ 	rowstride = gdk_pixbuf_get_rowstride (retval);

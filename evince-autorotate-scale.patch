@@ -1,0 +1,3172 @@
+--- evince-2.28.2/po/ar.po.orig	2009-10-20 11:56:22.000000000 +0200
++++ evince-2.28.2/po/ar.po	2010-05-19 14:46:07.000000000 +0200
+@@ -572,7 +572,7 @@ msgstr "الأمن:"
+ msgid "Paper Size:"
+ msgstr "مقاس الورق:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "لا شيء"
+ 
+@@ -870,6 +870,46 @@ msgstr "تحذير"
+ msgid "Your print range selection does not include any page"
+ msgstr "مدى الطباعة الذي اخترته لا يشمل أي صفحات"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "تحجيم الصفحة:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "قصّر إلى المنطقة المطبوعة"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "لائم المنطقة المطبوعة"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "دوّر تلقائيا ووسّط"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "معالجة الصفحات"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "خصائص"
+--- evince-2.28.2/po/bg.po.orig	2009-08-25 11:12:59.000000000 +0200
++++ evince-2.28.2/po/bg.po	2010-05-19 14:45:40.000000000 +0200
+@@ -575,7 +575,7 @@ msgstr "Сигурност:"
+ msgid "Paper Size:"
+ msgstr "Размер на хартията:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Без"
+ 
+@@ -875,6 +875,58 @@ msgstr "Предупреждение"
+ msgid "Your print range selection does not include any page"
+ msgstr "Обхватът за печат не включва нито една страница"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Мащабиране на страница:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Свиване към областта за печат"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Напасване към областта за печат"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Мащабиране на документите към избрания размер на листите. Изберете една от "
++"следните възможности:\n"
++"\n"
++"• „Без“: не се извършва мащабиране;\n"
++"\n"
++"• „Свиване към областта за печат“: страниците по-големи от областта за печат "
++"върху листите се свиват, за да се вместят в нея;\n"
++"\n"
++"• „Напасване към областта за печат“: страниците се свиват или увеличават, за "
++"да напаснат към областта за печат върху листите.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Автоматично завъртане и центриране"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Завъртане на всяка страница, за да съвпадне с ориентацията на листите на "
++"принтера. Страниците се центрират върху листите."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Управление на страниците"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Свойства"
+--- evince-2.28.2/po/bn_IN.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/bn_IN.po	2010-05-19 14:45:58.000000000 +0200
+@@ -579,7 +579,7 @@ msgstr "নিরাপত্তা:"
+ msgid "Paper Size:"
+ msgstr "কাগজের মাপ:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "শূণ্য"
+ 
+@@ -879,6 +879,46 @@ msgstr "সতর্কবার্ত�
+ msgid "Your print range selection does not include any page"
+ msgstr "প্রিন্টের উদ্দেশ্যে আপনার নির্বাচিত পৃষ্ঠার সীমার মধ্যে কোনো পৃষ্ঠা উপস্থিত নেই"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr ""
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "বিবিধ বৈশিষ্ট্য"
+--- evince-2.28.2/po/bn.po.orig	2009-08-08 16:18:41.000000000 +0200
++++ evince-2.28.2/po/bn.po	2010-05-19 14:45:35.000000000 +0200
+@@ -574,7 +574,7 @@ msgstr "নিরাপত্তা:"
+ msgid "Paper Size:"
+ msgstr "কাগজের আকার:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "একটিও নয়"
+ 
+@@ -876,6 +876,69 @@ msgstr "সতর্কতা"
+ msgid "Your print range selection does not include any page"
+ msgstr "আপনার মুদ্রণ সীমা নির্বাচন কোনো পৃষ্ঠা অন্তর্ভূক্ত করেনা"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "পৃষ্ঠার আকার পরিবর্তন:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "মুদ্রণযোগ্য ক্ষেত্রটুকুতে সংকুচিত করা হবে"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "মুদ্রণযোগ্য ক্ষেত্রটুকুতে মানানসই করা হবে"
++
++#: ../shell/ev-print-operation.c:1817
++#| msgid ""
++#| "Scale document pages to fit the selected printer page. Select from one of "
++#| "the following:\n"
++#| "\n"
++#| "• \"None\": No page scaling is performed.\n"
++#| "\n"
++#| "• \"Shrink to Printable Area\": Document pages larger than the printable "
++#| "area are reduced fit the printable area of the printer page.\n"
++#| "\n"
++#| "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++#| "required to fit the printable area of the printer page.\n"
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"নির্বাচিত মুদ্রণ পৃষ্ঠার সাথে মানানসই করার জন্য নথি পৃষ্ঠার আকার পরিবর্তন করুন। নিম্নে "
++"উল্লিখিত একটি নির্বাচন করুন:\n"
++"\n"
++"• \"None\": পৃষ্ঠার আকার পরিবর্তন করা হয়নি।\n"
++"\n"
++"• \"Shrink to Printable Area\": মুদ্রণযোগ্য ক্ষেত্রের চাইতে বড় নথি পৃষ্ঠার আকার "
++"কমানো হয় যাতে মুদ্রণ পৃষ্ঠার মুদ্রণযোগ্য ক্ষেত্রের সাথে মানানসই হয়।\n"
++"\n"
++"• \"Fit to Printable Area\": মুদ্রণ পৃষ্ঠার মুদ্রণযোগ্য ক্ষেত্রের সাথে মানানসই করার "
++"জন্য নথি পৃষ্ঠাকে প্রয়োজন অনুযায়ী বর্ধিত বা হ্রাস করা হয়।\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "স্বয়ংক্রিয়ভাবে আবর্তন ও কেন্দ্র"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"প্রতিটি নথি পৃষ্ঠার স্থিতিবিন্যাস মিলানোর জন্য প্রতিটি মুদ্রণ পৃষ্ঠার স্থিতিবিন্যাস আবর্তন "
++"করা হবে। নথি পৃষ্ঠাগুলো মুদ্রণ পৃষ্ঠার কেন্দ্রস্থিত করা হবে।"
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "পৃষ্ঠা হ্যান্ডলিং"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "বৈশিষ্ট্য"
+--- evince-2.28.2/po/ca.po.orig	2009-10-08 15:07:12.000000000 +0200
++++ evince-2.28.2/po/ca.po	2010-05-19 14:47:33.000000000 +0200
+@@ -577,7 +577,7 @@ msgstr "Seguretat:"
+ msgid "Paper Size:"
+ msgstr "Mida del paper:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Cap"
+ 
+@@ -878,6 +878,59 @@ msgstr "Avís"
+ msgid "Your print range selection does not include any page"
+ msgstr "No hi ha cap pàgina en el rang d'impressió"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Escalat de la pàgina:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Redueix a l'àrea d'impressió"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Ajusta a l'àrea d'impressió"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Escala les pàgines del document per ajustar-les a la pàgina d'impressió "
++"seleccionada. Seleccioneu una de les opcions següents:\n"
++"\n"
++"• «Cap»: No es fa cap escalat.\n"
++"\n"
++"• «Redueix a l'àrea d'impressió»: Es redueixen les pàgines més grans que "
++"l'àrea d'impressió per ajustar-se a l'àrea de la pàgina d'impressió.\n"
++"\n"
++"• «Ajusta a l'àrea d'impressió»: S'amplien o es redueixen segons convingui "
++"per ajustar-se a l'àrea de la pàgina d'impressió.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Gira automàticament i centra"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Gira l'orientació de la pàgina d'impressió de cada pàgina perquè coincideixi "
++"amb cada pàgina del document. Es centraran les pàgines respecte la pàgina "
++"d'impressió."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestió de la pàgina"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propietats"
+--- evince-2.28.2/po/ca@valencia.po.orig	2009-08-10 20:17:24.000000000 +0200
++++ evince-2.28.2/po/ca@valencia.po	2010-05-19 14:46:57.000000000 +0200
+@@ -580,7 +580,7 @@ msgstr "Seguretat:"
+ msgid "Paper Size:"
+ msgstr "Mida del paper:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Cap"
+ 
+@@ -881,6 +881,59 @@ msgstr ""
+ msgid "Your print range selection does not include any page"
+ msgstr ""
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Escalat de la pàgina:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Redueix a l'àrea d'impressió"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Ajusta a l'àrea d'impressió"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Escala les pàgines del document per ajustar-les a la pàgina d'impressió "
++"seleccionada. Seleccioneu una de les opcions següents:\n"
++"\n"
++"• «Cap»: No es fa cap escalat.\n"
++"\n"
++"• «Redueix a l'àrea d'impressió»: Es redueixen les pàgines més grans que "
++"l'àrea d'impressió per ajustar-se a l'àrea de la pàgina d'impressió.\n"
++"\n"
++"• «Ajusta a l'àrea d'impressió»: S'amplien o es redueixen segons convingui "
++"per ajustar-se a l'àrea de la pàgina d'impressió.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Gira automàticament i centra"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Gira l'orientació de la pàgina d'impressió de cada pàgina perquè coincidisca "
++"amb cada pàgina del document. Es centraran les pàgines respecte la pàgina "
++"d'impressió."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestió de la pàgina"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propietats"
+--- evince-2.28.2/po/cs.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/cs.po	2010-05-19 15:33:23.000000000 +0200
+@@ -582,7 +582,7 @@ msgstr "Zabezpečení:"
+ msgid "Paper Size:"
+ msgstr "Velikost papíru:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Žádné"
+ 
+@@ -881,6 +881,59 @@ msgstr "Varování"
+ msgid "Your print range selection does not include any page"
+ msgstr "Snažíte se vytisknout výběr, který nezahrnuje žádné stránky"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Změna velikosti stránky:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Zmenšit na tisknutelnou oblast"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Přizpůsobit tisknutelné oblasti"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Přizpůsobení stránky dokumentu tak, aby odpovídaly velikosti dle zvolené "
++"tiskárny. Vyberte jednu z následujících možností:\n"
++"\n"
++"• „Žádná“: Nebude provedena žádná změna velikosti.\n"
++"\n"
++"• „Zmenšit na tisknutelnou oblast“: Stránky dokumentu, které jsou větší než "
++"tisknutelná oblast budou zmenšeny tak, aby se vešly do tisknutelné oblasti "
++"tiskárny.\n"
++"\n"
++"• „Přizpůsobit tisknutelné oblasti“: Stránky dokumentu budou podle potřeby "
++"zvětšeny nebo zmenšeny tak, aby odpovídaly tisknutelné oblasti tiskárny.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automaticky otočit a centrovat"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Otočí každou tisknutou stranu tak, aby odpovídala orientaci stránky v "
++"dokumentu. Stránky dokumentu budou vycentrovány."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Nastavení stránky"
++
+ #: ../shell/ev-properties-dialog.c:56
+ msgid "Properties"
+ msgstr "Vlastnosti"
+--- evince-2.28.2/po/da.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/da.po	2010-05-19 14:46:20.000000000 +0200
+@@ -596,7 +596,7 @@ msgstr "Sikkerhed:"
+ msgid "Paper Size:"
+ msgstr "Papirstørrelse:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ingen"
+ 
+@@ -896,6 +896,61 @@ msgstr "Advarsel"
+ msgid "Your print range selection does not include any page"
+ msgstr "Intervallet i dit sidevalg indeholder ikke nogen sider"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Sideskalering:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Formindsk til printbart område"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Tilpas til printbart område"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Skalér sider i dokumentet, således at de passer til den valgte printerside. "
++"Vælg en af følgende muligheder:\n"
++"\n"
++"• \"Ingen\": Der udføres ikke nogen sideskalering.\n"
++"\n"
++"• \"Formindsk til printbart område\": Dokumentsider som er større end det "
++"printbare område reduceres, således at de passer til printersidens printbare "
++"område.\n"
++"\n"
++"• \"Tilpas til printbart område\": Dokumentsider bliver forstørret eller "
++"formindsket i passende grad, således at de passer til printersidens "
++"printbare område.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Autorotér og centrér"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rotér printerside-orientering for hver enkelt side, således at den passer "
++"til hver enkelt dokumentside. Dokumentsider vil blive centreret inden for "
++"printersiden."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Sidehåndtering"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Egenskaber"
+--- evince-2.28.2/po/de.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/de.po	2010-05-19 14:48:09.000000000 +0200
+@@ -587,7 +587,7 @@ msgstr "Sicherheit:"
+ msgid "Paper Size:"
+ msgstr "Papiergröße:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Kein"
+ 
+@@ -889,6 +889,58 @@ msgstr "Warnung"
+ msgid "Your print range selection does not include any page"
+ msgstr "Ihre Druckbereichsauswahl enthält keine Seiten"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Seitenskalierung:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Auf Druckbereich verkleinern"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Auf Druckbereich anpassen"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Die Dokumentseiten skalieren, so dass sie auf die gewählte Druckseite "
++"passen. Wählen Sie eine der folgenden Optionen:\n"
++"\n"
++"• »Kein«: Es wird keine Skalierung durchgeführt.\n"
++"\n"
++"• »Auf Druckbereich verkleinern«: Dokumentseiten werden auf den Druckbereich "
++"der Seite verkleinert, wenn sie größer als dieser sind.\n"
++"\n"
++"• »Auf Druckbereich anpassen«: Dokumentseiten werden bei Bedarf vergrößert "
++"oder verkleinert, um in den Druckbereich der Seite zu passen.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automatisch drehen und zentrieren"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Druckseiten auf das Hoch-/Querformat jeder Dokumentseite anpassen. Die "
++"Dokumentseiten werden in der Druckseite zentriert."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Seitenverarbeitung"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Eigenschaften"
+--- evince-2.28.2/po/el.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/el.po	2010-05-19 14:46:45.000000000 +0200
+@@ -591,7 +591,7 @@ msgstr "Ασφάλεια:"
+ msgid "Paper Size:"
+ msgstr "Μέγεθος χαρτιού:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Κανένα"
+ 
+@@ -886,6 +886,59 @@ msgstr "Προειδοποίηση"
+ msgid "Your print range selection does not include any page"
+ msgstr "Η επιλογή του εύρους εκτύπωσης δεν περιέχει καμία σελίδα"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Κλιμάκωση σελίδας:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Σμίκρυνση στην εκτυπώσιμη περιοχή"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Προσαρμογή στην εκτυπώσιμη περιοχή"
++
++#: ../shell/ev-print-operation.c:1817
++#| msgid ""
++#| "Scale document pages to fit the selected printer page. Select from one of "
++#| "the following:\n"
++#| "\n"
++#| "• \"None\": No page scaling is performed.\n"
++#| "\n"
++#| "• \"Shrink to Printable Area\": Document pages larger than the printable "
++#| "area are reduced fit the printable area of the printer page.\n"
++#| "\n"
++#| "• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++#| "required to fit the printable area of the printer page.\n"
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as required to fit the printable area of the printer page.\n"
++msgstr ""
++"Κλιμάκωση των σελίδων του εγγράφου για προσαρμογή στην επιλεγμένη σελίδα εκτυπωτή. Επιλέξτε ένα από τα ακόλουθα:\n"
++"\n"
++"• \"Καμία\": Δεν εφαρμόζεται καμία κλιμάκωση.\n"
++"\n"
++"• \"Σμίκρυνση στην εκτυπώσιμη περιοχή\": Οι σελίδες του εγγράφου που είναι μεγαλύτερες από την εκτυπώσιμη περιοχή της σελίδας του εκτυπωτή σμικρύνονται για να χωρέσουν.\n"
++"\n"
++"• \"Προσαρμογή στην εκτυπώσιμη περιοχή\": Οι σελίδες του εγγράφουν μεγεθύνονται ή σμικρύνονται ανάλογα, για να χωρέσουν στην εκτυπώσιμη περιοχή της σελίδας του εκτυπωτή.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Αυτόματη περιστροφή και κεντράρισμα"
++
++#: ../shell/ev-print-operation.c:1832
++msgid "Rotate printer page orientation of each page to match orientation of each document page. Document pages will be centered within the printer page."
++msgstr "Περιστροφή της κάθε σελίδας εκτυπωτή ώστε να ταιριάζει με τον προσανατολισμό κάθε σελίδας του εγγράφου. "
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Διαχείριση σελίδας"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Ιδιότητες"
+--- evince-2.28.2/po/en_GB.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/en_GB.po	2010-05-19 14:47:00.000000000 +0200
+@@ -570,7 +570,7 @@ msgstr "Security:"
+ msgid "Paper Size:"
+ msgstr "Paper Size:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "None"
+ 
+@@ -871,6 +871,58 @@ msgstr "Warning"
+ msgid "Your print range selection does not include any page"
+ msgstr "Your print range selection does not include any pages"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Page Scaling:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Shrink to Printable Area"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Fit to Printable Area"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Auto Rotate and Centre"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centred within the printer page."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Page Handling"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Properties"
+--- evince-2.28.2/po/es.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/es.po	2010-05-19 14:47:54.000000000 +0200
+@@ -583,7 +583,7 @@ msgstr "Seguridad:"
+ msgid "Paper Size:"
+ msgstr "Tamaño del papel:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ninguno"
+ 
+@@ -884,6 +884,61 @@ msgstr "Advertencia"
+ msgid "Your print range selection does not include any page"
+ msgstr "Su selección de intervalo de páginas no incluye ninguna página"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Escalado de página:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Encoger a un área imprimible"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Ajustar a un área imprimible"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Escalar las páginas del documento para ajustarlas a la página de impresión "
++"seleccionada. Seleccionar una de las siguientes:\n"
++"\n"
++"• «Ninguna»: No se realiza escalado de página.\n"
++"\n"
++"• «Encoger a un área imprimible»: Las páginas del documento más grandes que "
++"el área de impresión se reducen para ajustarse al área de impresión de "
++"página de la impresora.\n"
++"\n"
++"• «Ajustar a un área imprimible»: Las páginas del documento se aumentan o "
++"reducen según se requiera para ajustarse al área de impresión de página de "
++"la impresora.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Autorotar y centrar"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rotar la orientación de impresión de página de cada página para que coincida "
++"con cada página del documento. Las páginas del documento se centrarán en la "
++"página de impresión."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestión de páginas"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propiedades"
+--- evince-2.28.2/po/eu.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/eu.po	2010-05-19 14:46:32.000000000 +0200
+@@ -574,7 +574,7 @@ msgstr "Segurtasuna:"
+ msgid "Paper Size:"
+ msgstr "Paper-tamaina:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Bat ere ez"
+ 
+@@ -871,6 +871,60 @@ msgstr "Abisua"
+ msgid "Your print range selection does not include any page"
+ msgstr "Inprimatzeko hautatutako barrutiak ez du inolako orrialderik"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Orrialdea eskalatzea:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Uzkurtu area inprimagarrira"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Doitu area inprimagarrira"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Eskalatu dokumentuko orrialdeak hautatutako inprimagailuaren orrialdera "
++"doitzeko. Hautatu hauetariko bat:\n"
++"• \"Bat ere ez\": ez da orrialdeen eskalatzerik landuko.\n"
++"\n"
++"• \"Uzkurtu area inprimagarrira\": area inprimagarriak baino handiagoak "
++"diren dokumentuko orrialdeak txikitu egingo dira inprimagailuaren orrialdeko "
++"area inprimagarrira doitzeko.\n"
++"\n"
++"• \"Doitu area inprimagarrira\": dokumentuko orrialdeak behar haina bezain "
++"handitu edo txikitu egingo dira inprimagailuaren orrialdeko areara "
++"doitzeko.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Biratu eta zentratu automatikoki"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Biratu inprimagailuaren orrialdearen orrialde bakoitza orientazioa "
++"dokumentuko orrialde bakoitzaren orientazioarekin bat etortzeko. Dokumentuko "
++"orrialdeak zentratu egingo dira inprimagailuaren orrialdean."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Orrialdeen kudeaketa"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propietateak"
+--- evince-2.28.2/po/fi.po.orig	2009-08-16 17:43:02.000000000 +0200
++++ evince-2.28.2/po/fi.po	2010-05-19 14:45:44.000000000 +0200
+@@ -572,7 +572,7 @@ msgstr "Turvallisuus:"
+ msgid "Paper Size:"
+ msgstr "Paperin koko:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ei mitään"
+ 
+@@ -872,6 +872,60 @@ msgstr "Varoitus"
+ msgid "Your print range selection does not include any page"
+ msgstr "Tulostuksen sivualuevalinta ei sisällä yhtään sivua"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Sivun skaalaus:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Kutista tulostettavaan alueeseen"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Sovita tulostettavaan alueeseen"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Skaalaa asiakirjan sivut sopimaan tulostimen sivuille. Valitse yksi "
++"seuraavista:\n"
++"\n"
++"• ”Ei mitään”: Sivunskaalausta ei tehdä.\n"
++"\n"
++"• ”Kutista tulostettavaan alueeseen”: Tulostettavaa aluetta suuremmat "
++"asiakirjan sivut kutistetaan sopimaan tulostimen sivun tulostettaan "
++"alueeseen.\n"
++"\n"
++"• ”Sovita tulostettavaan alueeseen”: Asiakirjan sivuja kasvatetaan tai "
++"kutistetaan tarpeen mukaan sopimaan tulostimen sivun tulostettavaan "
++"alueeseen.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Käännä ja keskitä automaattisesti"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Käännä tulostimen sivusuunta jokaiselle sivulle täsmäämään asiakirjan sivun "
++"suuntaa. Asiakirjan sivut keskitetään tulostettavalle sivulle."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Sivunkäsittely"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Ominaisuudet"
+--- evince-2.28.2/po/fr.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/fr.po	2010-05-19 14:46:37.000000000 +0200
+@@ -592,7 +592,7 @@ msgstr "Sécurité :"
+ msgid "Paper Size:"
+ msgstr "Format de papier :"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Aucun"
+ 
+@@ -893,6 +893,60 @@ msgstr "Avertissement"
+ msgid "Your print range selection does not include any page"
+ msgstr "Votre intervalle d'impression n'inclut aucune page"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Ajustement des pages :"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Réduire selon la zone imprimable"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Ajuster selon la zone imprimable"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Redimensionne les pages du document pour correspondre à la taille de page de "
++"l'imprimante sélectionnée. Choisissez parmi les options suivantes :\n"
++"\n"
++"• Aucune : les pages ne sont pas redimensionnées.\n"
++"\n"
++"• Réduire selon la zone imprimable : les pages plus grandes que la zone "
++"imprimable sont réduites pour correspondre à la zone imprimable de "
++"l'imprimante.\n"
++"\n"
++"• Ajuster selon la zone imprimable : les pages sont réduites ou agrandies "
++"afin de correspondre au mieux à la zone imprimable de l'imprimante.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Pivoter automatiquement et centrer"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Fait pivoter les pages à l'impression selon l'orientation de chaque page du "
++"document imprimé. Les pages sont centrées dans la zone d'impression de "
++"l'imprimante."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestion des pages"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propriétés"
+--- evince-2.28.2/po/gl.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/gl.po	2010-05-19 14:46:29.000000000 +0200
+@@ -584,7 +584,7 @@ msgstr "Seguranza:"
+ msgid "Paper Size:"
+ msgstr "Tamaño do papel:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ningún"
+ 
+@@ -886,6 +886,60 @@ msgstr "Advertencia"
+ msgid "Your print range selection does not include any page"
+ msgstr "A súa selección de intervalo para impresión non contén ningunha páxina"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Escalado de páxina:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Reducir á área imprimíbel"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Axustar á área imprimíbel"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Escalar as páxinas do documento para axustalas á páxina de impresora "
++"seleccionada. Seleccione unha das seguintes:\n"
++"\n"
++"• \"Ningún\": Non se leva a cabo o escalado da páxina.\n"
++"\n"
++"• \"Reducir á área imprimíbel\": As páxinas do documento máis grandes que a "
++"área imprimíbel son reducidas para axustarse á área imprimíbel da páxina na "
++"impresora.\n"
++"\n"
++"• \"Axustar á área imprimíbel\": As páxinas do documento son ampliadas ou "
++"reducidas para axustarse á área imprimíbel da páxina na impresora.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Rotar automaticamente e centrar."
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rotar a orientación da páxina da impresora en cada páxina para coincidir a "
++"orientación de cada páxina do documento. As páxinas do documento serán "
++"centradas na páxina da impresora."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Xestión de páxina"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propiedades"
+--- evince-2.28.2/po/hu.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/hu.po	2010-05-19 14:46:26.000000000 +0200
+@@ -571,7 +571,7 @@ msgstr "Biztonság:"
+ msgid "Paper Size:"
+ msgstr "Papírméret:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Nincs"
+ 
+@@ -871,6 +871,59 @@ msgstr "Figyelmeztetés"
+ msgid "Your print range selection does not include any page"
+ msgstr "A kiválasztott nyomtatási tartomány nem tartalmaz oldalakat"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Oldal méretezése:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Zsugorítás a nyomtatható területre"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Illesztés a nyomtatható területhez"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Dokumentumoldalak átméretezése a kijelölt nyomtatóoldalhoz. Válasszon az "
++"alábbiak közül:\n"
++"\n"
++"• „Nincs”: Az oldal nem lesz átméretezve.\n"
++"\n"
++"• „Zsugorítás a nyomtatható területre”: A nyomtatható területnél nagyobb "
++"dokumentumoldalak mérete a nyomtatóoldal méretére lesz csökkentve.\n"
++"\n"
++"• „Illesztés a nyomtatható területhez”: A dokumentumoldalak szükség szerint "
++"a nyomtatóoldal nyomtatható területére lesznek növelve vagy csökkentve.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automatikus forgatás és középre igazítás"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Minden oldal nyomtatóoldal-tájolásának forgatása a dokumentumoldalnak "
++"megfelelően. A dokumentumoldalak az nyomtatóoldalon belül középre lesznek "
++"igazítva."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Oldalkezelés"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Tulajdonságok"
+--- evince-2.28.2/po/id.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/id.po	2010-05-19 14:46:11.000000000 +0200
+@@ -325,7 +325,7 @@ msgstr "Tidak ditempelkan"
+ msgid "Document"
+ msgstr "Dokumen"
+ 
+-#: ../properties/ev-properties-view.c:173
++#: ../properties/ev-properties-view.c:173 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Tidak Ada"
+ 
+@@ -544,6 +544,48 @@ msgstr "Dokumen ini dalam keadaan terkun
+ msgid "_Unlock Document"
+ msgstr "B_uka Kunci Dokumen"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Penskalaan Halaman:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Perkecil ke Wilayah Dapat Dicetak"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Paskan ke Wilayah Dapat Dicetak"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as required to fit the printable area of the printer page.\n"
++msgstr ""
++"Skalakan halaman dokumen agar pas dengan halaman pencetak yang dipilih. Pilih satu dari berikut:\n"
++"\n"
++"• \"None\" (Tak Satupun): Tidak dilakukan penskalaan halaman.\n"
++"\n"
++"• \"Shrink to Printable Area\" (Perkecil ke Wilayah Dapat Dicetak): Halaman-halaman dokumen yang lebih besar daripada wilayah yang dapat dicetak akan diperkecil agar pas dengan wilayah yang dapat dicetak dari halaman pencetak.\n"
++"\n"
++"• \"Fit to Printable Area\" (Paskan ke Wilayah Dapat Dicetak): Halaman-halaman dokumen diperbesar atau diperkecil seperlunya agar pas dengan wilayah yang dapat dicetak dari halaman pencetak.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Otomatis Putar dan Tengah"
++
++#: ../shell/ev-print-operation.c:1832
++msgid "Rotate printer page orientation of each page to match orientation of each document page. Document pages will be centered within the printer page."
++msgstr "Putar orientasi halaman pencetak dari setiap halaman agar cocok dengan orientasi setiap halaman dokumen. Halaman dokumen akan diletakkan di tengah halaman pencetak."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Penanganan Halaman"
++
+ #: ../shell/ev-properties-dialog.c:61
+ msgid "Properties"
+ msgstr "Properti"
+--- evince-2.28.2/po/it.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/it.po	2010-05-19 14:47:28.000000000 +0200
+@@ -586,7 +586,7 @@ msgid "Paper Size:"
+ msgstr "Dimensione carta:"
+ 
+ # [NdT] si riferisce a "Sicurezza"
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Nessuna"
+ 
+@@ -887,6 +887,60 @@ msgstr "Attenzione"
+ msgid "Your print range selection does not include any page"
+ msgstr "L'intervallo di stampa selezionato non contiene alcuna pagina"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Scala pagina:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Riduci all'area stampabile"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Adatta all'area stampabile"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Scala le pagine del documento fino a riempire l'area di stampa selezionata. "
++"Selezionare uno dei seguenti:\n"
++"\n"
++"• \"Nessuna\": non viene eseguita alcuna scalatura della pagina.\n"
++"\n"
++"• \"Riduci all'area stampabile\": le pagine del documento più grandi "
++"dell'area di stampa sono ridotte per riempire l'area stampabile della pagina "
++"di stampa.\n"
++"\n"
++"• \"Adatta all'area stampabile\": le pagine del documento sono ingrandite o "
++"ridotte alla bisogna per riempire l'area stampabile della pagina di stampa.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Ruota e centra automaticamente"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Ruota l'orientamento della pagina di stampa per farlo corrispondere "
++"all'orientamento di ogni pagina del documento. Le pagine del documento "
++"verranno centrate nella pagina di stampa. "
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestione pagina"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Proprietà"
+--- evince-2.28.2/po/ja.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/ja.po	2010-05-19 14:47:45.000000000 +0200
+@@ -576,7 +576,7 @@ msgstr "セキュリティ:"
+ msgid "Paper Size:"
+ msgstr "ページサイズ:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "なし"
+ 
+@@ -879,6 +879,46 @@ msgstr "警告"
+ msgid "Your print range selection does not include any page"
+ msgstr "印刷範囲の選択にページが何も含まれていません"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr ""
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "プロパティ"
+--- evince-2.28.2/po/kn.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/kn.po	2010-05-19 14:48:06.000000000 +0200
+@@ -571,7 +571,7 @@ msgstr "ಸುರಕ್ಷತೆ:"
+ msgid "Paper Size:"
+ msgstr "ಕಾಗದದ ಗಾತ್ರ:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "ಯಾವುದೂ ಇಲ್ಲ"
+ 
+@@ -870,6 +870,46 @@ msgstr "ಎಚ್ಚರಿಕೆ"
+ msgid "Your print range selection does not include any page"
+ msgstr "ನೀವು ಮುದ್ರಿಸಲು ಆಯ್ಕೆ ಮಾಡಿದ ಪುಟಗಳು ವ್ಯಾಪ್ತಿಯಲ್ಲಿ ಯಾವುದೆ ಪುಟಗಳಿಲ್ಲ"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr ""
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "ಗುಣಲಕ್ಷಣಗಳು"
+--- evince-2.28.2/po/ko.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/ko.po	2010-05-19 14:45:51.000000000 +0200
+@@ -575,7 +575,7 @@ msgstr "보안:"
+ msgid "Paper Size:"
+ msgstr "용지 크기:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "없음"
+ 
+@@ -872,6 +872,53 @@ msgstr "경고"
+ msgid "Your print range selection does not include any page"
+ msgstr "인쇄 범위 선택 안에 아무 페이지도 없습니다"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "페이지 크기 조절:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "인쇄 가능 영역으로 줄이기"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "인쇄 가능 영역에 맞추기"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"문서 페이지를 프린터 페이지에 맞춰 크기를 조정합니다. 다음 중 하나를 선택하십시오:\n"
++"\n"
++"• \"없음\": 페이지 크기 조정을 하지 않습니다.\n"
++"\n"
++"• \"인쇄 가능 영역으로 줄이기\": 인쇄 가능 영역보다 큰 페이지를 축소해서 인쇄 가능 영역에 맞춥니다.\n"
++"\n"
++"• \"인쇄 가능 영역에 맞추기\": 페이지를 필요에 따라 확대하거나 축소해서 인쇄 가능 영역에 맞춥니다.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "자동 회전 및 가운데 정렬"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr "문서 페이지에 맞게 프린터 페이지 방향을 회전합니다. 문서 페이지는 프린터 페이지 가운데에 맞춥니다."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "페이지 처리"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "속성"
+--- evince-2.28.2/po/lt.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/lt.po	2010-05-19 14:48:00.000000000 +0200
+@@ -576,7 +576,7 @@ msgstr "Apsauga:"
+ msgid "Paper Size:"
+ msgstr "Lapo dydis:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Nėra"
+ 
+@@ -877,6 +877,61 @@ msgstr "Įspėjimas"
+ msgid "Your print range selection does not include any page"
+ msgstr "Pasirinktame spausdinimo rėžyje nėra nė vieno puslapio"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Puslapio mastelis:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Sumažinti iki spausdinamos dalies"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Pritaikyti prie spausdinamos dalies"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Keisti dokumento puslapių dydį pritaikant prie pasirinkto spausdintuvo "
++"puslapio. Pasirinkite vieną iš šių:\n"
++"\n"
++"• „Nekeisti“: puslapio dydis nebus keičiamas.\n"
++"\n"
++"• „Sumažinti iki spausdinamo ploto“: dokumento puslapiai, didesni nei "
++"spausdinamas plotas, bus sumažinti, kad tilptų į spausdintuvo puslapio "
++"spausdinamą dalį.\n"
++"\n"
++"• „Pritaikyti prie spausdinamo ploto“: dokumento puslapiai bus padidinti "
++"arba sumažinti pagal poreikį, pritaikant prie spausdintuvo puslapio "
++"spausdinamos dalis.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automatiškai pasukti ir centruoti"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Pasukti spausdintuvo puslapį kiekvienam puslapiui, pritaikant jį prie "
++"dokumento puslapio orientacijos. Dokumento puslapiai bus centruojami "
++"spausdintuvo puslapyje."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Puslapių apdorojimas"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Savybės"
+--- evince-2.28.2/po/lv.po.orig	2009-04-24 09:24:16.000000000 +0200
++++ evince-2.28.2/po/lv.po	2010-05-19 14:48:03.000000000 +0200
+@@ -374,7 +374,7 @@ msgstr "Nezināma kļūda"
+ msgid "Document"
+ msgstr "Dokuments"
+ 
+-#: ../properties/ev-properties-view.c:176
++#: ../properties/ev-properties-view.c:176 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Nekas"
+ 
+@@ -628,6 +628,58 @@ msgstr "Dokuments ir slēgts, lai to apl
+ msgid "_Unlock Document"
+ msgstr "Atslēgt dokumentu"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Mērogošana:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Samazināt līdz drukāšanas apgabalam"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Pielāgot drukāšanas apgabalam"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Mērogot dokumenta lapas, lai tās ietilptu printera lapā. Izvēlieties vienu "
++"no šīm iespējām:\n"
++"\n"
++"• \"Nedarīt neko\": Lappuses netiks mērogotas.\n"
++"\n"
++"• \"Samazināt līdz drukāšanas apgabalam\": Dokumenta lappuses, kas ir "
++"lielākas par drukājamo apgabalu, tiks samazinātas, lai tajā ietilptu.\n"
++"\n"
++"• \"Pielāgot drukāšanas apgabalam\": Dokumenta lappuses pēc vajadzības tiks "
++"palielinātas vai samazinātas, lai atbilstu drukājamā apgabala izmēriem.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automātiski pagriezt un iecentrēt"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Mainīt printera lapu orientāciju, lai tā atbilstu katras dokumenta lappuses "
++"orientācijai. Dokumenta lappuse tiks novietota printera lapas centrā."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Lappušu apstrāde"
++
+ #: ../shell/ev-properties-dialog.c:61
+ msgid "Properties"
+ msgstr "Parametri"
+--- evince-2.28.2/po/ml.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/ml.po	2010-05-19 14:46:34.000000000 +0200
+@@ -572,7 +572,7 @@ msgstr "സുരക്ഷിതത്�
+ msgid "Paper Size:"
+ msgstr "പേപ്പറിന്റെ വ്യാപ്തി:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "ഒന്നുമില്ല"
+ 
+@@ -869,6 +869,46 @@ msgstr "മുന്നറിയിപ�
+ msgid "Your print range selection does not include any page"
+ msgstr "നിങ്ങള്‍ തെരഞ്ഞെടുത്ത പ്രിന്റ് പരിധിയില്‍ ഒരു താളും ഉള്‍പ്പെടുന്നില്ല"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr ""
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "ഗുണഗണങ്ങള്‍"
+--- evince-2.28.2/po/nb.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/nb.po	2010-05-19 14:47:31.000000000 +0200
+@@ -572,7 +572,7 @@ msgstr "Sikkerhet:"
+ msgid "Paper Size:"
+ msgstr "Papirstørrelse:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ingen"
+ 
+@@ -871,6 +871,58 @@ msgstr "Advarsel"
+ msgid "Your print range selection does not include any page"
+ msgstr "Ingen sider valgt i området som er valgt for utskrift"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Skalering av side:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Krymp til utskriftsområde"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Tilpass utskriftsområde"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Skaler dokumentets sider til å passe til skriverens sidestørrelse. Velg fra "
++"en av følgende:\n"
++"\n"
++"• «None»: Ingen skalering av sidene utføres.\n"
++"\n"
++"• «Shrink to Printable Area»: Dokumentsider som er større enn "
++"utskriftsområdet reduseres til å passe til skriverens utskriftsområde.\n"
++"\n"
++"• «Fit to Printable Area»: Dokumentets sider forstørres eller forminskes til "
++"å passe utskriftsområdet for skriveren etter behov.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Roter og sentrer automatisk"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Roter skriverens sideorientering for hver side til å passe orientering i "
++"dokumentet. Dokumentets sider vil bli sentrert innenfor utskriftsområdet."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Sidehåndtering"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Egenskaper"
+--- evince-2.28.2/po/nl.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/nl.po	2010-05-19 14:46:48.000000000 +0200
+@@ -614,7 +614,7 @@ msgid "Paper Size:"
+ msgstr "Papierformaat"
+ 
+ # Niets/geen
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Geen"
+ 
+@@ -924,6 +924,60 @@ msgstr "Waarschuwing"
+ msgid "Your print range selection does not include any page"
+ msgstr "Het door u geselecteerde afdrukbereik bevat geen enkele pagina"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Schalen van pagina's:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Verkleinen tot afdrukbaar gebied"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Schalen naar afdrukbaar gebied"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Documentpagina's schalen zodat deze op de printerpagina's passen. Kies een "
++"van de volgende opties:\n"
++"\n"
++"• ‘Geen’: pagina's worden niet geschaald.\n"
++"\n"
++"• ‘Verkleinen tot afdrukbaar gebied’: Documentpagina's groter dan het "
++"afdrukbare gebied worden verkleind zodat deze op een printerpagina passen.\n"
++"\n"
++"• ‘Schalen naar afdrukbaar gebied’: Documentpagina's worden vergroot of "
++"verkleind zodat deze op het afdrukbare gebied op een printerpagina passen.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automatisch roteren en centreren"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Paginaoriëntatie van printer zo roteren dat deze overeenkomt met de "
++"paginaoriëntatie van documentpagina's. Documentpagina's zullen gecentreerd "
++"worden op de printerpagina."
++
++# betere vertaling?
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Pagina-afhandeling"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Eigenschappen"
+--- evince-2.28.2/po/or.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/or.po	2010-05-19 14:46:17.000000000 +0200
+@@ -575,7 +575,7 @@ msgstr "ସୁରକ୍ଷା:"
+ msgid "Paper Size:"
+ msgstr "ପୃଷ୍ଠା ଆକାର:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "କିଛି ନୁହେଁ"
+ 
+@@ -872,6 +872,46 @@ msgstr "ଚେତାବନୀ"
+ msgid "Your print range selection does not include any page"
+ msgstr "ଆପଣଙ୍କର ମୁଦ୍ରଣ ପରିସର ଚୟନ କୌଣସି ପୃଷ୍ଠାକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରେନାହିଁ"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr ""
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "ଗୁଣଧର୍ମ"
+--- evince-2.28.2/po/pa.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/pa.po	2010-05-19 14:46:43.000000000 +0200
+@@ -569,7 +569,7 @@ msgstr "ਸੁਰੱਖਿਆ:"
+ msgid "Paper Size:"
+ msgstr "ਪੇਪਰ ਸਾਈਜ਼:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "ਕੋਈ ਨਹੀਂ"
+ 
+@@ -866,6 +866,57 @@ msgstr "ਚੇਤਾਵਨੀ"
+ msgid "Your print range selection does not include any page"
+ msgstr "ਤੁਹਾਡੀ ਪਰਿੰਟ ਰੇਜ਼ ਵਿੱਚ ਕੋਈ ਵੀ ਪੇਜ਼ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "ਪੇਜ਼ ਸਕੇਲਿੰਗ:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "ਪਰਿੰਟ ਹੋਣ ਯੋਗ ਖੇਤਰ ਲਈ ਸੁੰਘੜੋ"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "ਪਰਿੰਟ ਹੋਣਯੋਗ ਖੇਤਰ ਲਈ ਫਿੱਟ"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"ਡੌਕੂਮੈਂਟ ਪੇਜ਼ ਨੂੰ ਚੁਣੇ ਪਰਿੰਟਰ ਪੇਜ਼ ਮੁਤਾਬਕ ਸਕੇਲ ਕਰੋ। ਹੇਠ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਸੇ ਨੂੰ ਚੁਣੋ:\n"
++"\n"
++"• \"None (ਕੋਈ ਨਹੀਂ)\": ਕੋਈ ਪੇਜ਼ ਸਕੇਲਿੰਗ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।\n"
++"\n"
++"• \"Shrink to Printable Area (ਪਰਿੰਟ ਹੋਣ ਯੋਗ ਖੇਤਰ ਲਈ ਸੁੰਘੜੋ)\": ਡੌਕੂਮੈਂਟ ਪੇਜ਼, ਜੋ ਕਿ "
++"ਪਰਿੰਟ ਹੋਣ ਖੇਤਰ ਤੋਂ ਵੱਧ ਹੋਵੇਗਾ, ਨੂੰ ਪਰਿੰਟਰ ਪੇਜ਼ ਦੇ ਪਰਿੰਟ ਹੋਣ ਯੋਗ ਖੇਤਰ ਮੁਤਾਬਕ ਘਟਾਇਆ ਜਾਵੇਗਾ।\n"
++"\n"
++"• \"Fit to Printable Area (ਪਰਿੰਟ ਯੋਗ ਖੇਤਰ ਵਿੱਚ ਫਿੱਟ)\":  ਡੌਕੂਮੈਂਟ ਪੇਜ਼ਾਂ ਨੂੰ ਪਰਿੰਟਰ ਪੇਜ਼ ਦੇ ਪਰਿੰਟ "
++"ਹੋਣ ਯੋਗ ਖੇਤਰ ਵਿੱਚ ਫਿੱਟ ਕਰਨ ਲਈ ਵੱਡਾ ਜਾਂ ਛੋਟਾ ਕੀਤਾ ਜਾਵੇਗਾ।\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "ਆਟੋ ਘੁੰਮਾਓ ਅਤੇ ਸੈਂਟਰ"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"ਹਰੇਕ ਪੇਜ਼ ਲਈ ਪਰਿੰਟਰ ਪੇਜ਼ ਸਥਿਤੀ ਨੂੰ ਡੌਕੂਮੈਂਟ ਪੇਜ਼ ਦੀ ਸਥਿਤੀ ਮੁਤਾਬਕ ਘੁੰਮਾਉ। ਡੌਕੂਮੈਂਟ ਪੇਜ਼ ਨੂੰ ਪਰਿੰਟਰ "
++"ਪੇਜ਼ ਦੇ ਸੈਂਟਰ ਵਿੱਚ ਰੱਖਿਆ ਜਾਵੇਗਾ।"
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "ਪੇਜ਼ ਹੈਡਲਿੰਗ"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "ਵਿਸ਼ੇਸ਼ਤਾ"
+--- evince-2.28.2/po/pl.po.orig	2009-08-18 09:11:56.000000000 +0200
++++ evince-2.28.2/po/pl.po	2010-05-19 14:47:36.000000000 +0200
+@@ -588,7 +588,7 @@ msgstr "Zabezpieczenia:"
+ msgid "Paper Size:"
+ msgstr "Rozmiar papieru:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Brak"
+ 
+@@ -883,6 +883,65 @@ msgstr "Ostrzeżenie"
+ msgid "Your print range selection does not include any page"
+ msgstr "Wybór zakresu wydruku nie zawiera żadnej strony"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Skalowanie strony:"
++
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Zmniejszenie do drukowalnego obszaru"
++
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Dopasowanie do drukowalnego obszaru"
++
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Skalowanie stron dokumentu, aby pasowały do wybranej strony drukarki. Proszę "
++"wybrać jedną opcję z poniższych:\n"
++"\n"
++"• \"Brak\": żadne skalowanie strony nie będzie wykonywane.\n"
++"\n"
++"• \"Zmniejszenie do drukowalnego obszaru\": strony dokumentu większe niż "
++"obszar drukowalny będą zmniejszane, aby pasować do drukowalnego obszaru "
++"stron drukarki.\n"
++"\n"
++"• \"Dopasowanie do drukowalnego obszaru\": strony dokumentów będą "
++"powiększane lub zmniejszane, aby dopasować do obszaru drukowalnego stron "
++"drukarki.\n"
++
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automatyczne obracanie i wyśrodkowanie"
++
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Obraca układ strony drukarki każdej strony na pasujący do układu stron "
++"dokumentu. Strony dokumentu będą wyśrodkowane na stronie drukarki."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Obsługa stron"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Właściwości"
+--- evince-2.28.2/po/pt_BR.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/pt_BR.po	2010-05-19 14:46:23.000000000 +0200
+@@ -587,7 +587,7 @@ msgstr "Segurança:"
+ msgid "Paper Size:"
+ msgstr "Tamanho do papel:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Nenhum"
+ 
+@@ -884,6 +884,61 @@ msgstr "Aviso"
+ msgid "Your print range selection does not include any page"
+ msgstr "A sua seleção de intervalo de impressão não inclui página alguma"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Escala:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Encolher para a área imprimível"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Caber na área imprimível"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Redimensiona páginas para caber na página da impressora. Selecione uma das "
++"seguintes opções:\n"
++"\n"
++"• \"Nenhum\": Nenhum redimensionamento de página é realizado.\n"
++"\n"
++"• \"Reduzir para a área de impressão\": Páginas de documentos maiores que a "
++"área de impressão são reduzidas para caber na área de impressão da página na "
++"impressora.\n"
++"\n"
++"• \"Preencher área de impressão\": Páginas de documentos são ampliadas ou "
++"reduzidas conforme a necessidade, para preencher a área de impressão da "
++"página na impressora.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Auto rotacionar e centralizar"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rotacionar a orientação de cada página para corresponder à cada página do "
++"documento. As páginas do documento serão centralizadas dentro da página da "
++"impressora."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Manuseio de página"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propriedades"
+--- evince-2.28.2/po/pt.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/pt.po	2010-05-19 14:47:39.000000000 +0200
+@@ -576,7 +576,7 @@ msgstr "Segurança:"
+ msgid "Paper Size:"
+ msgstr "Tamanho do Papel:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Nenhum"
+ 
+@@ -877,6 +877,59 @@ msgstr "Aviso"
+ msgid "Your print range selection does not include any page"
+ msgstr "A selecção de intervalo de impressão não inclui qualquer página"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Escala de Página:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Redimensionar para a Área de Impressão"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Fazer Caber na Área de Impressão"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Escalar as páginas do documento para caberem na página de impressão "
++"seleccionada. Seleccione de entre uma das seguintes:\n"
++"\n"
++"• \"None\": Não é realizado redimensionamento de página.\n"
++"\n"
++"• \"Redimensionar para a Área de Impressão\": Páginas de documento maiores "
++"do que a área de impressão são reduzidas para caberem na página impressa.\n"
++"\n"
++"• \"Fazer Caber na Área de Impressão\": As páginas do documento são "
++"ampliadas ou reduzidas para encherem a totalidade da página impressa.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Centrar e Rodar Automaticamente"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rodar a orientação de cada página do documento para coincidir com a "
++"orientação da página na impressora. As páginas do documento serão centradas "
++"na página impressa."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestão de Páginas"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Propriedades"
+--- evince-2.28.2/po/ro.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/ro.po	2010-05-19 14:47:11.000000000 +0200
+@@ -577,7 +577,7 @@ msgstr "Securitate:"
+ msgid "Paper Size:"
+ msgstr "Format de pagină:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Fără"
+ 
+@@ -877,6 +877,48 @@ msgstr "Avertisment"
+ msgid "Your print range selection does not include any page"
+ msgstr "Intervalul selectat pentru tipărire nu include nici o pagină"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Scalare pagină:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Micșorează la aria tipăribilă"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Încadrează la aria tipăribilă"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as required to fit the printable area of the printer page.\n"
++msgstr ""
++"Scalează paginile documentelor pentru a încăpea pe pagina imprimantei selectată. Alegeți una din următoarele:\n"
++"\n"
++"• „Niciuna”: Nu se efectuează nicio scalare de pagină.\n"
++"\n"
++"• „Micșorează la aria tipăribilă”: Paginile documentului mai mari decât aria tipăribilă sunt micșorate pentru a încăpea pe aria tipăribilă a paginii imprimantei.\n"
++"\n"
++"• „Încadrează la aria tipăribilă”: Paginile documentului sunt mărite sau micșorate după nevoie pentru a încăpea pe aria tipăribilă a paginii imprimantei.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Rotește automat și centrează"
++
++#: ../shell/ev-print-operation.c:1832
++msgid "Rotate printer page orientation of each page to match orientation of each document page. Document pages will be centered within the printer page."
++msgstr "Rotește orientarea de imprimare a fiecărei pagini pentru a se potrivi cu orientarea fiecărei pagini a documentului. Paginile documentului vor fi centrate în pagina documentului."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Gestionare pagini"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Proprietăți"
+--- evince-2.28.2/po/ru.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/ru.po	2010-05-19 14:46:51.000000000 +0200
+@@ -573,7 +573,7 @@ msgstr "Безопасность:"
+ msgid "Paper Size:"
+ msgstr "Размер страницы:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Отсутствует"
+ 
+@@ -870,6 +870,57 @@ msgstr "Предупреждение"
+ msgid "Your print range selection does not include any page"
+ msgstr "Выделенный диапазон печати не включает в себя ни одной страницы"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Масштабирование страницы:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Урезать до области печати"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Уместить в область печати"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Подгонка страниц документа к области печати выбранного принтера. Выберите:\n"
++"\n"
++"• \"Нет\": Не выполнять подгонку.\n"
++"\n"
++"• \"Урезать до области печати\": Страницы документа, большие чем область "
++"печати, будут урезаны до области печати страницы принтера.\n"
++"\n"
++"• \"Уместить в область печати\": Страницы документа будут увеличены или "
++"уменьшены в соответствии с областью печати страницы принтера.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Автоматическое вращение и центрирование"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Изменять ориентацию страницы принтера в соответствии с каждой страницей "
++"документа. Страницы документа будут центрированы на странице принтера."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Обработка страницы"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Свойства"
+--- evince-2.28.2/po/sl.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/sl.po	2010-05-19 14:46:54.000000000 +0200
+@@ -591,7 +591,7 @@ msgstr "Varnost:"
+ msgid "Paper Size:"
+ msgstr "Velikost papirja:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Brez"
+ 
+@@ -886,6 +886,48 @@ msgstr "Opozorilo"
+ msgid "Your print range selection does not include any page"
+ msgstr "Območje tiskanja ne vključuje nobene strani"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Prilagajanje velikosti strani:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Skrči na območje tiskanja"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Prilagodi velikosti tiskanja"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as required to fit the printable area of the printer page.\n"
++msgstr ""
++"Prilagajanje velikosti dokumenta tiskalniku. Izbrati je mogoče naslednje vrednosti:\n"
++"\n"
++"• \"Brez\": Strani ne bodo prilagojene tiskanju.\n"
++"\n"
++"• \"Skrči na območje tiskanja\": Strani dokumenta, ki so večje od območja tiskanja bodo pomanjšane na zahtevano velikost.\n"
++"\n"
++"• \"Prilagodi velikosti tiskanja\": Strani dokumenta so povečane ali pomanjšane glede na območje tiskanja.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Samodejno zavrti in sredini"
++
++#: ../shell/ev-print-operation.c:1832
++msgid "Rotate printer page orientation of each page to match orientation of each document page. Document pages will be centered within the printer page."
++msgstr "Zavrti postavitev vsake natisnjene strani tako, da se sklada z stranjo dokumenta. Strani bodo sredinjenje znotraj natisnjene strani."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Upravljanje strani"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Lastnosti"
+--- evince-2.28.2/po/sr@latin.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/sr@latin.po	2010-05-19 14:46:04.000000000 +0200
+@@ -583,7 +583,7 @@ msgstr "Zaštita:"
+ msgid "Paper Size:"
+ msgstr "Veličina papira:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ništa"
+ 
+@@ -888,6 +888,58 @@ msgstr "Upozorenje"
+ msgid "Your print range selection does not include any page"
+ msgstr "Opseg za štampu ne sadrži ni jednu stranicu"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Razvuci stranicu:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Umanji na oblast za štampu"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Uklopi u oblast za štampu"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Razvlači stranice dokumenta tako da se uklope u izabranu stranicu štampača. "
++"Izaberite jedno od priloženih:\n"
++"\n"
++"• „Ništa“: Ne razvlači stranice dokumenta.\n"
++"\n"
++"• „Umanji na oblast za štampu“: Umanjuje stranice dokumenta koje su veće od "
++"oblasti za štampu tako da se uklope na papir štampača.\n"
++"\n"
++"• „Uklopi u oblast za štampu“: Smanjuje ili povećava stranice dokumenta tako "
++"da se uklope na papir štampača.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Sam rotiraj i centriraj"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Okreće svaku stranicu štampača, tako da bude ista onoj unutar dokumenta i "
++"postavlja stranice dokumenta na sredinu papira za štampu."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Rad sa stranicama"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Osobine"
+--- evince-2.28.2/po/sr.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/sr.po	2010-05-19 14:47:08.000000000 +0200
+@@ -583,7 +583,7 @@ msgstr "Заштита:"
+ msgid "Paper Size:"
+ msgstr "Величина папира:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ништа"
+ 
+@@ -888,6 +888,58 @@ msgstr "Упозорење"
+ msgid "Your print range selection does not include any page"
+ msgstr "Опсег за штампу не садржи ни једну страницу"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Развуци страницу:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Умањи на област за штампу"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Уклопи у област за штампу"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Развлачи странице документа тако да се уклопе у изабрану страницу штампача. "
++"Изаберите једно од приложених:\n"
++"\n"
++"• „Ништа“: Не развлачи странице документа.\n"
++"\n"
++"• „Умањи на област за штампу“: Умањује странице документа које су веће од "
++"области за штампу тако да се уклопе на папир штампача.\n"
++"\n"
++"• „Уклопи у област за штампу“: Смањује или повећава странице документа тако "
++"да се уклопе на папир штампача.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Сам ротирај и центрирај"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Окреће сваку страницу штампача, тако да буде иста оној унутар документа и "
++"поставља странице документа на средину папира за штампу."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Рад са страницама"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Особине"
+--- evince-2.28.2/po/sv.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/sv.po	2010-05-19 14:47:15.000000000 +0200
+@@ -590,7 +590,7 @@ msgstr "Säkerhet:"
+ msgid "Paper Size:"
+ msgstr "Pappersstorlek:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Ingen"
+ 
+@@ -887,6 +887,60 @@ msgstr "Varning"
+ msgid "Your print range selection does not include any page"
+ msgstr "Ditt val av utskriftsintervall inkluderar inte någon sida"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Sidskalning:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Förminska till utskrivningsbart område"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Anpassa till utskrivningsbart område"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Skala dokumentsidor för att passa den valda skrivarsidan. Välj från en av "
++"följande:\n"
++"\n"
++"• \"Ingen\": Ingen sidskalning genomförs.\n"
++"\n"
++"• \"Förminska till utskrivningsbart område\": Dokumentsidor större än det "
++"utskrivningsbara området minskas för att passa det utskrivningsbara området "
++"för skrivarsidan.\n"
++"\n"
++"• \"Anpassa till utskrivningsbart område\": Dokumentsidor förstoras eller "
++"förminskas enligt vad som krävs för att passa det utskrivningsbara området "
++"för skrivarsidan.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Automatisk rotering och centrering"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Rotera skrivarens sidorientering för varje sida för att matcha orienteringen "
++"för varje dokumentsida. Dokumentsidor kommer att centreras inom skrivarsidan."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Sidhantering"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Egenskaper"
+--- evince-2.28.2/po/ta.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/ta.po	2010-05-19 14:46:40.000000000 +0200
+@@ -573,7 +573,7 @@ msgstr "பாதுகாப்பு:"
+ msgid "Paper Size:"
+ msgstr "காகித அளவு:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "இல்லை"
+ 
+@@ -871,6 +871,58 @@ msgstr "எச்சரிக்கை"
+ msgid "Your print range selection does not include any page"
+ msgstr "உங்கள் அச்சு வீச்சு தேர்வு எந்த பக்கத்தையும் உள்ளடக்கவில்லை"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "பக்க மறுஅளவீடு"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "அச்சிடக்கூடிய பரப்புக்கு சுருக்கு"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "அச்சிடக்கூடிய பரப்புக்கு பொருத்துக"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"தேர்ந்தெடுத்த அச்சுப்பொறிக்கு  ஆவண பக்கங்களை பொருத்த மறு அளவீடு செய்க. கீழ் கண்டவற்றில் "
++"ஏதேனும் ஒன்றை தேர்வு செய்க:\n"
++"\n"
++"• \"ஏதுமில்லை\": மறு அளவீடு இல்லை.\n"
++"\n"
++"• \"அச்சுப்பரப்புக்கு சுருக்கு\": அச்சிடக்கூடிய அளவுக்கு அதிகமாக ஆவண அளவு இருப்பின் "
++"அச்சுப்பொறியின் அச்சிடக்கூடிய பக்க அளவுக்கு மறு அளவு செய்யப்படும்..\n"
++"\n"
++"• \"அச்சிடக்கூடிய பரப்புக்கு பொருத்துக\": அச்சுப்பொறியின் அச்சிடக்கூடிய பக்க அளவுக்கு   "
++"ஆவண பக்கம் சுருக்கவோ நீட்டவோ செய்யப்படும்.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "தானியங்கி சுழற்சி மற்றும் மையப்படுத்தல்"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"ஒவ்வொரு ஆவண பக்கத்தின் திசையையும் ஒத்திசைய அச்சுப்பொறி பக்க திஅசை பொருத்தத்தை மாற்றுக. "
++"ஆவண பக்கங்கள் அச்சுப்பொறி பக்கத்திற்கு மையப்படுத்தப்படும்."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "பக்க கையாளுமை"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "பண்புகள்"
+--- evince-2.28.2/po/th.po.orig	2009-08-25 11:12:59.000000000 +0200
++++ evince-2.28.2/po/th.po	2010-05-19 14:45:47.000000000 +0200
+@@ -569,7 +569,7 @@ msgstr "การรักษาคว�
+ msgid "Paper Size:"
+ msgstr "ขนาดกระดาษ:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "ไม่มี"
+ 
+@@ -867,6 +867,56 @@ msgstr "คำเตือน"
+ msgid "Your print range selection does not include any page"
+ msgstr "ช่วงการพิมพ์ที่คุณเลือกไม่ครอบคลุมหน้าเอกสารใดเลยสักหน้า"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "การย่อ-ขยายหน้าเอกสาร:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "ย่อลงเท่าพื้นที่หน้ากระดาษพิมพ์"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "ปรับให้พอดีกับหน้ากระดาษพิมพ์"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"ย่อ-ขยายหน้าเอกสารให้พิมพ์ลงในหน้ากระดาษของเครื่องพิมพ์ได้ โดยเลือกจากตัวเลือกต่อไปนี้:\n"
++"\n"
++"• \"ไม่มี\": ไม่ต้องย่อ-ขยายหน้าเอกสาร\n"
++"\n"
++"• \"ย่อลงเท่าพื้นที่หน้ากระดาษพิมพ์\": "
++"ย่อหน้าเอกสารที่ใหญ่กว่าหน้ากระดาษพิมพ์ลงให้พอดีกับหน้ากระดาษในเครื่องพิมพ์\n"
++"\n"
++"• \"ปรับให้พอดีกับหน้ากระดาษพิมพ์\": ย่อหรือขยายหน้าเอกสารให้พอดีกับหน้ากระดาษในเครื่องพิมพ์\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "หมุนและวางกึ่งกลางโดยอัตโนมัติ"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"หมุนหน้ากระดาษพิมพ์ของเครื่องพิมพ์แต่ละหน้าให้ตรงกับแนววางของแต่ละหน้าเอกสาร "
++"พร้อมทั้งจัดวางหน้าเอกสารให้อยู่กึ่งกลางหน้ากระดาษพิมพ์พอดี"
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "การจัดการหน้ากระดาษ"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "คุณสมบัติ"
+--- evince-2.28.2/po/uk.po.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/po/uk.po	2010-05-19 14:46:01.000000000 +0200
+@@ -572,7 +572,7 @@ msgstr "Захищений:"
+ msgid "Paper Size:"
+ msgstr "Розмір сторінки:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "Немає"
+ 
+@@ -873,6 +873,58 @@ msgstr "Застереження"
+ msgid "Your print range selection does not include any page"
+ msgstr "Область друку не включає жодної сторінки"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "Масштаб сторінки:"
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "Скоротити до області друку"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "Умістити у області друку"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"Змінювати масштаб сторінок щоб умістити їх на сторінці принтера. Виберіть:\n"
++"\n"
++"• \"Ні\": Не змінювати масштаб.\n"
++"\n"
++"• \"Скоротити до області друку\": Сторінки документу, які більші за область "
++"друку зменшуються до розмірів області друку принтера.\n"
++"\n"
++"• \"Умістити у області друку\": Сторінки документу збільшуюся чи зменшуються "
++"при потребі, щоб уміститись у області друку принтера.\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "Автоматичний поворот та центрування"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"Змінювати орієнтацію кожної сторінки принтера, для відповідності орієнтації "
++"кожній сторінці документа. Сторінки документу будуть центровані у сторінці "
++"принтера."
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "Обробка сторінок"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "Властивості"
+--- evince-2.28.2/po/zh_HK.po.orig	2009-09-15 15:55:56.000000000 +0200
++++ evince-2.28.2/po/zh_HK.po	2010-05-19 14:47:57.000000000 +0200
+@@ -572,7 +572,7 @@ msgstr "安全性:"
+ msgid "Paper Size:"
+ msgstr "紙張大小:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "沒有"
+ 
+@@ -870,6 +870,53 @@ msgstr "警告"
+ msgid "Your print range selection does not include any page"
+ msgstr "你選擇的打印範圍並未包含任何頁面"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "頁面縮放："
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "縮減至可打印區域"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "符合可打印區域"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"將文件縮放至可打印區域。可選擇以下選項：\n"
++"\n"
++"• \"沒有\"：不進行頁面的縮放。\n"
++"\n"
++"• \"符合可打印區域\"：文件頁面超過可打印區域時會被縮小以符合打印機的可打印區域。\n"
++"\n"
++"• \"縮減至可打印區域\"：文件頁面會被放大或縮小以符合打印機的可打印區域。\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "自動旋轉並置中"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr "旋轉每一頁的打印機頁面方向以符合文件頁面的方向。文件的頁面會在打印機的頁面裏置中。"
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "頁面處理方式"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "屬性"
+--- evince-2.28.2/po/zh_TW.po.orig	2010-05-19 13:35:12.000000000 +0200
++++ evince-2.28.2/po/zh_TW.po	2010-05-19 14:47:42.000000000 +0200
+@@ -574,7 +574,7 @@ msgstr "安全性:"
+ msgid "Paper Size:"
+ msgstr "紙張大小:"
+ 
+-#: ../properties/ev-properties-view.c:202
++#: ../properties/ev-properties-view.c:202 ../shell/ev-print-operation.c:1812
+ msgid "None"
+ msgstr "沒有"
+ 
+@@ -871,6 +871,56 @@ msgstr "警告"
+ msgid "Your print range selection does not include any page"
+ msgstr "您選擇的列印範圍並未包含任何頁面"
+ 
++#: ../shell/ev-print-operation.c:1807
++msgid "Page Scaling:"
++msgstr "頁面縮放："
++
++#: ../shell/ev-print-operation.c:1813
++msgid "Shrink to Printable Area"
++msgstr "縮減至可列印區域"
++
++#: ../shell/ev-print-operation.c:1814
++msgid "Fit to Printable Area"
++msgstr "符合可列印區域"
++
++#: ../shell/ev-print-operation.c:1817
++msgid ""
++"Scale document pages to fit the selected printer page. Select from one of "
++"the following:\n"
++"\n"
++"• \"None\": No page scaling is performed.\n"
++"\n"
++"• \"Shrink to Printable Area\": Document pages larger than the printable "
++"area are reduced to fit the printable area of the printer page.\n"
++"\n"
++"• \"Fit to Printable Area\": Document pages are enlarged or reduced as "
++"required to fit the printable area of the printer page.\n"
++msgstr ""
++"將文件縮放至可列印區域。可選擇以下選項：\n"
++"\n"
++"• \"沒有\"：不進行頁面的縮放。\n"
++"\n"
++"• \"符合可列印區域\"：文件頁面超過可列印區域時會被縮小以符合印表機的可列印區"
++"域。\n"
++"\n"
++"• \"縮減至可列印區域\"：文件頁面會被放大或縮小以符合印表機的可列印區域。\n"
++
++#: ../shell/ev-print-operation.c:1829
++msgid "Auto Rotate and Center"
++msgstr "自動旋轉並置中"
++
++#: ../shell/ev-print-operation.c:1832
++msgid ""
++"Rotate printer page orientation of each page to match orientation of each "
++"document page. Document pages will be centered within the printer page."
++msgstr ""
++"旋轉每一頁的印表機頁面方向以符合文件頁面的方向。文件的頁面會在印表機的頁面裡"
++"置中。"
++
++#: ../shell/ev-print-operation.c:1912
++msgid "Page Handling"
++msgstr "頁面處理方式"
++
+ #: ../shell/ev-properties-dialog.c:57
+ msgid "Properties"
+ msgstr "屬性"
+--- evince-2.28.2/shell/ev-print-operation.c.orig	2009-12-14 20:47:36.000000000 +0100
++++ evince-2.28.2/shell/ev-print-operation.c	2010-05-19 16:01:00.000000000 +0200
+@@ -1463,6 +1463,15 @@ typedef struct _EvPrintOperationPrintCla
+ 
+ static GType ev_print_operation_print_get_type (void) G_GNUC_CONST;
+ 
++typedef enum {
++	EV_SCALE_NONE,
++	EV_SCALE_SHRINK_TO_PRINTABLE_AREA,
++	EV_SCALE_FIT_TO_PRINTABLE_AREA
++} EvPrintScale;
++
++#define EV_PRINT_SETTING_PAGE_SCALE "evince-print-setting-page-scale"
++#define EV_PRINT_SETTING_AUTOROTATE "evince-print-setting-page-autorotate"
++
+ struct _EvPrintOperationPrint {
+ 	EvPrintOperation parent;
+ 
+@@ -1471,6 +1480,12 @@ struct _EvPrintOperationPrint {
+ 	gint               total;
+ 	EvJob             *job_print;
+ 	gchar             *job_name;
++
++        /* Page handling tab */
++        GtkWidget   *scale_combo;
++        EvPrintScale page_scale;
++	GtkWidget   *autorotate_button;
++	gboolean     autorotate;
+ };
+ 
+ struct _EvPrintOperationPrintClass {
+@@ -1646,6 +1661,9 @@ ev_print_operation_print_request_page_se
+ 	EvPrintOperation *op = EV_PRINT_OPERATION (print);
+ 	gint              width, height;
+ 
++	if (!print->autorotate)
++		return;
++
+ 	ev_page_cache_get_size (ev_page_cache_get (op->document),
+ 				page_nr, 0, 1.0,
+ 				&width, &height);
+@@ -1656,6 +1674,31 @@ ev_print_operation_print_request_page_se
+ }
+ 
+ static void
++_print_context_get_hard_margins (GtkPrintContext *context,
++				 gdouble         *top,
++				 gdouble         *bottom,
++				 gdouble         *left,
++				 gdouble         *right)
++{
++#if GTK_CHECK_VERSION (2, 19, 2)
++	if (!gtk_print_context_get_hard_margins (context, top, bottom, left, right)) {
++		*top = 0;
++		*bottom = 0;
++		*left = 0;
++		*right = 0;
++	}
++#else
++	GtkPageSetup *page_setup;
++
++	page_setup = gtk_print_context_get_page_setup (context);
++	*top = gtk_page_setup_get_top_margin (page_setup, GTK_UNIT_POINTS);
++	*bottom = gtk_page_setup_get_bottom_margin (page_setup, GTK_UNIT_POINTS);
++	*left = gtk_page_setup_get_left_margin (page_setup, GTK_UNIT_POINTS);
++	*right = gtk_page_setup_get_right_margin (page_setup, GTK_UNIT_POINTS);
++#endif
++}
++
++static void
+ ev_print_operation_print_draw_page (EvPrintOperationPrint *print,
+ 				    GtkPrintContext       *context,
+ 				    gint                   page)
+@@ -1665,6 +1708,8 @@ ev_print_operation_print_draw_page (EvPr
+ 	gdouble           cr_width, cr_height;
+ 	gint              width, height;
+ 	gdouble           scale;
++	gdouble           x_scale, y_scale;
++	gdouble           top, bottom, left, right;
+ 
+ 	gtk_print_operation_set_defer_drawing (print->op);
+ 
+@@ -1686,16 +1731,125 @@ ev_print_operation_print_draw_page (EvPr
+ 	ev_page_cache_get_size (ev_page_cache_get (op->document),
+ 				page, 0, 1.0,
+ 				&width, &height);
+-	if (cr_width / (gdouble)width < cr_height / (gdouble)height)
+-	        scale = cr_width / (gdouble)width;
+-	else
+-	        scale = cr_height / (gdouble)height;
+-	cairo_scale (cr, scale, scale);
++
++	if (print->page_scale == EV_SCALE_NONE) {
++		/* Center document page on the printed page */
++		if (print->autorotate)
++			cairo_translate (cr, (cr_width - width) / 2, (cr_height - height) / 2);
++	} else {
++		_print_context_get_hard_margins (context, &top, &bottom, &left, &right);
++		x_scale = (cr_width - left - right) / width;
++		y_scale = (cr_height - top - bottom) / height;
++
++		if (x_scale < y_scale)
++			scale = x_scale;
++		else
++			scale = y_scale;
++
++		if (print->autorotate) {
++			double left_right_sides, top_bottom_sides;
++
++			cairo_translate (cr, (cr_width - scale * width) / 2,
++					 (cr_height - scale * height) / 2);
++
++			/* Ensure document page is within the margins. The
++			 * scale guarantees the document will fit in the
++			 * margins so we just need to check each side and
++			 * if it overhangs the margin, translate it to the
++			 * margin. */
++			left_right_sides = (cr_width - width*scale)/2;
++			top_bottom_sides = (cr_height - height*scale)/2;
++			if (left_right_sides < left)
++				cairo_translate (cr, left - left_right_sides, 0);
++
++			if (left_right_sides < right)
++				cairo_translate (cr, -(right - left_right_sides), 0);
++
++			if (top_bottom_sides < top)
++				cairo_translate (cr, 0, top - top_bottom_sides);
++
++			if (top_bottom_sides < bottom)
++				cairo_translate (cr, 0, -(bottom - top_bottom_sides));
++		} else {
++			cairo_translate (cr, left, top);
++		}
++
++		if (print->page_scale == EV_SCALE_FIT_TO_PRINTABLE_AREA || scale < 1.0) {
++			cairo_scale (cr, scale, scale);
++		}
++	}
+ 
+ 	ev_job_print_set_cairo (EV_JOB_PRINT (print->job_print), cr);
+ 	ev_job_scheduler_push_job (print->job_print, EV_JOB_PRIORITY_NONE);
+ }
+ 
++static GObject *
++ev_print_operation_print_create_custom_widget (EvPrintOperationPrint *print,
++					       GtkPrintContext       *context)
++{
++	GtkPrintSettings *settings;
++	GtkWidget        *label;
++	GtkWidget        *table;
++	EvPrintScale      page_scale;
++	gboolean          autorotate = TRUE;
++
++	settings = gtk_print_operation_get_print_settings (print->op);
++	page_scale = gtk_print_settings_get_int_with_default (settings, EV_PRINT_SETTING_PAGE_SCALE, 0);
++	autorotate = gtk_print_settings_has_key (settings, EV_PRINT_SETTING_AUTOROTATE) ?
++		gtk_print_settings_get_bool (settings, EV_PRINT_SETTING_AUTOROTATE) :
++		TRUE;
++
++	table = gtk_table_new (2, 2, FALSE);
++	gtk_table_set_row_spacings (GTK_TABLE (table), 6);
++	gtk_table_set_col_spacings (GTK_TABLE (table), 12);
++	gtk_container_set_border_width (GTK_CONTAINER (table), 12);
++
++	label =  gtk_label_new (_("Page Scaling:"));
++	gtk_table_attach (GTK_TABLE (table), label, 0, 1, 0, 1, GTK_FILL, 0, 0, 0);
++	gtk_widget_show (label);
++
++	print->scale_combo = gtk_combo_box_new_text ();
++	gtk_combo_box_append_text (GTK_COMBO_BOX (print->scale_combo), _("None"));
++	gtk_combo_box_append_text (GTK_COMBO_BOX (print->scale_combo), _("Shrink to Printable Area"));
++	gtk_combo_box_append_text (GTK_COMBO_BOX (print->scale_combo), _("Fit to Printable Area"));
++	gtk_combo_box_set_active (GTK_COMBO_BOX (print->scale_combo), page_scale);
++	gtk_widget_set_tooltip_text (print->scale_combo,
++		_("Scale document pages to fit the selected printer page. Select from one of the following:\n"
++		  "\n"
++		  "• \"None\": No page scaling is performed.\n"
++		  "\n"
++		  "• \"Shrink to Printable Area\": Document pages larger than the printable area"
++		  " are reduced to fit the printable area of the printer page.\n"
++		  "\n"
++		  "• \"Fit to Printable Area\": Document pages are enlarged or reduced as"
++		  " required to fit the printable area of the printer page.\n"));
++	gtk_table_attach (GTK_TABLE (table), print->scale_combo, 1, 2, 0, 1, GTK_FILL, 0, 0, 0);
++	gtk_widget_show (print->scale_combo);
++
++	print->autorotate_button = gtk_check_button_new_with_label (_("Auto Rotate and Center"));
++	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (print->autorotate_button), autorotate);
++	gtk_widget_set_tooltip_text (print->autorotate_button,
++		_("Rotate printer page orientation of each page to match orientation of each document page. "
++		  "Document pages will be centered within the printer page."));
++	gtk_table_attach (GTK_TABLE (table), print->autorotate_button, 0, 2, 1, 2, GTK_FILL, 0, 0, 0);
++	gtk_widget_show (print->autorotate_button);
++
++	return G_OBJECT (table);
++}
++
++static void
++ev_print_operation_print_custom_widget_apply (EvPrintOperationPrint *print,
++					      GtkPrintContext       *context)
++{
++	GtkPrintSettings *settings;
++
++	print->page_scale = gtk_combo_box_get_active (GTK_COMBO_BOX (print->scale_combo));
++	print->autorotate = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (print->autorotate_button));
++	settings = gtk_print_operation_get_print_settings (print->op);
++	gtk_print_settings_set_int (settings, EV_PRINT_SETTING_PAGE_SCALE, print->page_scale);
++	gtk_print_settings_set_bool (settings, EV_PRINT_SETTING_AUTOROTATE, print->autorotate);
++}
++
+ static void
+ ev_print_operation_print_finalize (GObject *object)
+ {
+@@ -1746,7 +1900,16 @@ ev_print_operation_print_init (EvPrintOp
+ 	g_signal_connect_swapped (print->op, "request_page_setup",
+ 				  G_CALLBACK (ev_print_operation_print_request_page_setup),
+ 				  print);
++	g_signal_connect_swapped (print->op, "create_custom_widget",
++				  G_CALLBACK (ev_print_operation_print_create_custom_widget),
++				  print);
++	g_signal_connect_swapped (print->op, "custom_widget_apply",
++				  G_CALLBACK (ev_print_operation_print_custom_widget_apply),
++				  print);
+ 	gtk_print_operation_set_allow_async (print->op, TRUE);
++	gtk_print_operation_set_use_full_page (print->op, TRUE);
++	gtk_print_operation_set_unit (print->op, GTK_UNIT_POINTS);
++	gtk_print_operation_set_custom_tab_label (print->op, _("Page Handling"));
+ }
+ 
+ static void

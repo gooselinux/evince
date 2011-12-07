@@ -1,0 +1,81 @@
+From d57f2d993a242da4c62b2692795ce86185c348f7 Mon Sep 17 00:00:00 2001
+From: Marek Kasik <mkasik@redhat.com>
+Date: Thu, 22 Oct 2009 13:44:22 +0200
+Subject: [PATCH] Provide some indication that search is not available
+
+Show warning message when pressing "Ctrl-F" or "/"
+in a non-searchable document (#596888).
+---
+ data/evince-ui.xml |    1 +
+ shell/ev-window.c  |   15 ++++++---------
+ 2 files changed, 7 insertions(+), 9 deletions(-)
+
+diff --git a/data/evince-ui.xml b/data/evince-ui.xml
+index 7ac4edb..3fe2a6d 100644
+--- a/data/evince-ui.xml
++++ b/data/evince-ui.xml
+@@ -94,6 +94,7 @@
+   <accelerator name="GoBackwardFastAccel" action="GoBackwardFast"/>
+   <accelerator name="GoForwardFastAccel" action="GoForwardFast"/>
+   <accelerator name="EscapeAccel" action="Escape"/>
++  <accelerator name="CtrlFAccel" action="CtrlF"/>
+   <accelerator name="SlashAccel" action="Slash"/>
+   <accelerator name="F3Accel" action="F3"/>
+   <accelerator name="SpaceAccel" action="Space"/>
+diff --git a/shell/ev-window.c b/shell/ev-window.c
+index f4974e3..49a2058 100644
+--- a/shell/ev-window.c
++++ b/shell/ev-window.c
+@@ -397,7 +397,8 @@ ev_window_setup_action_sensitivity (EvWindow *ev_window)
+         /* Edit menu */
+ 	ev_window_set_action_sensitive (ev_window, "EditSelectAll", has_pages && can_get_text);
+ 	ev_window_set_action_sensitive (ev_window, "EditFind", can_find);
+-	ev_window_set_action_sensitive (ev_window, "Slash", can_find);
++	ev_window_set_action_sensitive (ev_window, "Slash", has_document);
++	ev_window_set_action_sensitive (ev_window, "CtrlF", !can_find && has_document);
+ 	ev_window_set_action_sensitive (ev_window, "EditRotateLeft", has_pages);
+ 	ev_window_set_action_sensitive (ev_window, "EditRotateRight", has_pages);
+ 
+@@ -490,11 +491,6 @@ ev_window_update_actions (EvWindow *ev_window)
+ static void
+ ev_window_set_view_accels_sensitivity (EvWindow *window, gboolean sensitive)
+ {
+-	gboolean can_find;
+-
+-	can_find = window->priv->document && 
+-	    EV_IS_DOCUMENT_FIND (window->priv->document);
+-
+ 	if (window->priv->action_group) {
+ 		ev_window_set_action_sensitive (window, "PageDown", sensitive);
+ 		ev_window_set_action_sensitive (window, "PageUp", sensitive);
+@@ -509,8 +505,6 @@ ev_window_set_view_accels_sensitivity (EvWindow *window, gboolean sensitive)
+ 		ev_window_set_action_sensitive (window, "KpPlus", sensitive);
+ 		ev_window_set_action_sensitive (window, "KpMinus", sensitive);
+ 		ev_window_set_action_sensitive (window, "Equal", sensitive);
+-
+-		ev_window_set_action_sensitive (window, "Slash", sensitive && can_find);
+ 	}
+ }
+ 
+@@ -3210,7 +3204,8 @@ ev_window_cmd_edit_find (GtkAction *action, EvWindow *ev_window)
+         g_return_if_fail (EV_IS_WINDOW (ev_window));
+ 
+ 	if (ev_window->priv->document == NULL || !EV_IS_DOCUMENT_FIND (ev_window->priv->document)) {
+-		g_error ("Find action should be insensitive since document doesn't support find");
++		ev_window_warning_message (ev_window, "%s",
++					   _("The document doesn't support search"));
+ 		return;
+ 	} 
+ 
+@@ -4925,6 +4920,8 @@ static const GtkActionEntry entries[] = {
+ 	  G_CALLBACK (ev_window_cmd_escape) },
+         { "Slash", GTK_STOCK_FIND, NULL, "slash", NULL,
+           G_CALLBACK (ev_window_cmd_edit_find) },
++        { "CtrlF", NULL, NULL, "<control>F", NULL,
++          G_CALLBACK (ev_window_cmd_edit_find) },
+         { "F3", NULL, "", "F3", NULL,
+           G_CALLBACK (ev_window_cmd_edit_find_next) },
+         { "PageDown", NULL, "", "Page_Down", NULL,
+-- 
+1.6.2.5
+

@@ -1,0 +1,51 @@
+diff -up evince-2.28.2/shell/ev-application.c.dir-prefix evince-2.28.2/shell/ev-application.c
+--- evince-2.28.2/shell/ev-application.c.dir-prefix	2010-03-22 09:56:23.566438920 -0400
++++ evince-2.28.2/shell/ev-application.c	2010-03-22 09:59:01.394690284 -0400
+@@ -922,11 +922,17 @@ ev_application_init (EvApplication *ev_a
+ 	gint i;
+ 	const gchar *home_dir;
+ 	gchar *toolbar_path;
++        const gchar *override;
+ 
+-        ev_application->dot_dir = g_build_filename (g_get_home_dir (),
+-                                                    ".gnome2",
+-                                                    "evince",
+-                                                    NULL);
++        override = g_getenv ("GNOME22_USER_DIR");
++
++        if (override)
++                ev_application->dot_dir = g_build_filename (override, "evince", NULL);
++        else
++                ev_application->dot_dir = g_build_filename (g_get_home_dir (),
++                                                            ".gnome2",
++                                                            "evince",
++                                                            NULL);
+ 
+         /* FIXME: why make this fatal? */
+         if (!ev_dir_ensure_exists (ev_application->dot_dir, 0700))
+@@ -946,15 +952,16 @@ ev_application_init (EvApplication *ev_a
+ 
+ 	ev_application_init_session (ev_application);
+ 
+-	home_dir = g_get_home_dir ();
+-	if (home_dir) {
+-		ev_application->accel_map_file = g_build_filename (home_dir,
+-								   ".gnome2",
+-								   "accels",
+-								   "evince",
+-								   NULL);
+-		gtk_accel_map_load (ev_application->accel_map_file);
+-	}
++        if (override)
++                ev_application->accel_map_file = g_build_filename (override, "accels", "evince", NULL);
++        else
++	        ev_application->accel_map_file = g_build_filename (g_get_home_dir (),
++							          ".gnome2",
++							          "accels",
++							          "evince",
++							          NULL);
++
++	gtk_accel_map_load (ev_application->accel_map_file);
+ 	
+ 	ev_application->toolbars_model = egg_toolbars_model_new ();
+ 
