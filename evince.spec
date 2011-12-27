@@ -6,7 +6,7 @@
 
 Name:		evince
 Version:	2.28.2
-Release:	14%{?dist}
+Release:	14%{?dist}.1
 Summary:	Document viewer
 
 License:	GPLv2+ and GFDL
@@ -44,6 +44,9 @@ Patch10:        evince-default-page-scale.patch
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=589191
 Patch11:         evince-translation2.patch
+
+# https://bugzilla.redhat.com/show_bug.cgi?id=666323
+Patch12:	evince-CVE-2010-2640_CVE-2010-2641_CVE-2010-2642_CVE-2010-2643.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -132,6 +135,7 @@ This package contains a backend to let evince display dvi files.
 %patch9 -p1 -b .autorotate-scale
 %patch10 -p1 -b .default-scale
 %patch11 -p1 -b .translation2
+%patch12 -p1 -b .CVE-2010-2640_CVE-2010-2641_CVE-2010-2642_CVE-2010-2643
 
 %build
 %configure --disable-static --disable-scrollkeeper \
@@ -277,6 +281,10 @@ fi
 %{_libdir}/evince/1/backends/dvidocument.evince-backend
 
 %changelog
+* Mon Jan  3 2011 Marek Kasik <mkasik@redhat.com> - 2.28.2-14.el6_0.1
+- Fixes CVE-2010-2640, CVE-2010-2641, CVE-2010-2642 and CVE-2010-2643
+- Resolves: #666323
+
 * Mon Aug  9 2010 Marek Kasik <mkasik@redhat.com> - 2.28.2-14
 - Update translations
 - patch by Ankit Patel
