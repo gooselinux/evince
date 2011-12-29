@@ -6,7 +6,7 @@
 
 Name:		evince
 Version:	2.28.2
-Release:	14%{?dist}
+Release:	14%{?dist}.goose.1
 Summary:	Document viewer
 
 License:	GPLv2+ and GFDL
@@ -139,7 +139,8 @@ This package contains a backend to let evince display dvi files.
 	--enable-comics=yes \
 	--enable-dvi=yes \
 	--disable-djvu
-make %{?_smp_mflags} LIBTOOL=/usr/bin/libtool
+#make %{?_smp_mflags} LIBTOOL=/usr/bin/libtool
+make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -277,6 +278,9 @@ fi
 %{_libdir}/evince/1/backends/dvidocument.evince-backend
 
 %changelog
+* Wed Dec 28 2011 Ivan Makfinsky <ivan@gooseporject.org> - 2.28.2-14.gl6.goose.1
+- Removed system libtool reference to correct libtool issues
+
 * Mon Aug  9 2010 Marek Kasik <mkasik@redhat.com> - 2.28.2-14
 - Update translations
 - patch by Ankit Patel
