@@ -143,7 +143,7 @@ This package contains a backend to let evince display dvi files.
 	--enable-comics=yes \
 	--enable-dvi=yes \
 	--disable-djvu
-make %{?_smp_mflags} LIBTOOL=/usr/bin/libtool
+make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
